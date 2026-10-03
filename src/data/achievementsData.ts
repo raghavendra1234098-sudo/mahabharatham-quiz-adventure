@@ -1,0 +1,68 @@
+import { Achievement } from '../types/game';
+
+export const ACHIEVEMENTS_DATA: Achievement[] = [
+  {
+    id: 'arjunas-focus',
+    title: "Arjuna's Focus",
+    description: 'Complete the first 10 levels of Story Part 1.',
+    icon: '🎯',
+    requiredLevels: 10,
+    unlocked: false,
+  },
+  {
+    id: 'dharma-seeker',
+    title: 'Dharma Seeker',
+    description: 'Complete 30 levels of the epic journey.',
+    icon: '🪷',
+    requiredLevels: 30,
+    unlocked: false,
+  },
+  {
+    id: 'warrior',
+    title: 'Kurukshetra Warrior',
+    description: 'Complete 60 levels with unwavering perseverance.',
+    icon: '🔥',
+    requiredLevels: 60,
+    unlocked: false,
+  },
+  {
+    id: 'story-master',
+    title: 'Story Master',
+    description: 'Complete all 10 story parts and absorb their timeless wisdom.',
+    icon: '🏆',
+    requiredLevels: 100,
+    unlocked: false,
+  },
+  {
+    id: 'mahabharata-scholar',
+    title: 'Mahabharata Scholar',
+    description: 'Successfully complete all 100 levels and claim the Royal Scholar Certificate.',
+    icon: '👑',
+    requiredLevels: 100,
+    unlocked: false,
+  },
+  {
+    id: 'riddle-sage',
+    title: 'Sage of Riddles',
+    description: 'Answer every Mahabharata riddle without failing.',
+    icon: '🔮',
+    requiredLevels: 15,
+    unlocked: false,
+  },
+  {
+    id: 'perfect-marksman',
+    title: 'Golden Marksman',
+    description: 'Achieve 3 stars on at least 25 levels.',
+    icon: '⭐',
+    requiredLevels: 25,
+    unlocked: false,
+  },
+  {
+    id: 'wallpaper-collector',
+    title: 'Royal Collector',
+    description: 'Unlock 5 or more legendary character wallpapers.',
+    icon: '🖼️',
+    requiredLevels: 50,
+    unlocked: false,
+  },
+];

@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#070a13] text-amber-50;
+    font-family: 'Cinzel', 'Plus Jakarta Sans', serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-royal {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom Royal Indian Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1222;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Royal Gold & Aura Gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff2b2 0%, #d4af37 40%, #aa7c11 75%, #f6e05e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+  border-color: rgba(212, 175, 55, 0.9);
+}
+
+/* Ornate Antique Stone & Parchment Plaque */
+.antique-stone-card {
+  background: linear-gradient(180deg, rgba(22, 27, 46, 0.94) 0%, rgba(12, 16, 28, 0.96) 100%);
+  border: 2px solid #947127;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.25);
+}
+
+/* Elongated Hexagonal / Beveled Answer Cartridge (Matching User Reference) */
+.answer-cartridge {
+  background: linear-gradient(180deg, #182038 0%, #0d1224 50%, #080c18 100%);
+  border: 1.5px solid #a67c2e;
+  box-shadow: inset 0 1px 1px rgba(255, 235, 175, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.6), 0 4px 12px rgba(0, 0, 0, 0.6);
+  clip-path: polygon(14px 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0% 50%);
+}
+.answer-cartridge:hover:not(:disabled) {
+  background: linear-gradient(180deg, #243054 0%, #151e38 50%, #0e1529 100%);
+  border-color: #ffd700;
+  box-shadow: inset 0 1px 2px rgba(255, 245, 205, 0.4), 0 0 20px rgba(212, 175, 55, 0.45);
+}
+
+/* Correct Emerald Jade Cartridge */
+.answer-cartridge-correct {
+  background: linear-gradient(180deg, #064e3b 0%, #022c22 100%) !important;
+  border-color: #34d399 !important;
+  box-shadow: 0 0 25px rgba(52, 211, 153, 0.6), inset 0 0 15px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Wrong Ruby Crimson Cartridge */
+.answer-cartridge-wrong {
+  background: linear-gradient(180deg, #7f1d1d 0%, #450a0a 100%) !important;
+  border-color: #f87171 !important;
+  box-shadow: 0 0 25px rgba(248, 113, 113, 0.6), inset 0 0 15px rgba(239, 68, 68, 0.4) !important;
+}
+
+/* Floating Ember Particle Animation */
+@keyframes floatingEmber {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-120px) translateX(25px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.ember-particle {
+  position: absolute;
+  background: radial-gradient(circle, #ffeedd 0%, #f59e0b 50%, rgba(234, 88, 12, 0) 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatingEmber 4s infinite ease-out;
+}
+
+/* ─── ROYAL ANCIENT MAHABHARATA GAME UI STYLING ─── */
+
+/* Sculpted Stone & Antique Bronze Panel */
+.royal-stone-panel {
+  background: linear-gradient(180deg, rgba(20, 26, 44, 0.94) 0%, rgba(11, 15, 27, 0.97) 100%);
+  border: 1.5px solid #a67c2e;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 235, 175, 0.25),
+    inset 0 0 25px rgba(0, 0, 0, 0.8),
+    0 8px 32px rgba(0, 0, 0, 0.75),
+    0 0 15px rgba(212, 175, 55, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+/* Primary Beveled Golden Action Button (Continue Journey / Start) */
+.royal-action-btn {
+  background: linear-gradient(180deg, #ffd700 0%, #d4af37 35%, #b8860b 75%, #8c6200 100%);
+  border: 2px solid #fff2b2;
+  box-shadow:
+    inset 0 2px 2px rgba(255, 255, 255, 0.6),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(245, 158, 11, 0.65),
+    0 6px 16px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.royal-action-btn:hover {
+  background: linear-gradient(180deg, #fff2b2 0%, #f59e0b 40%, #c28800 80%, #996300 100%);
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.8),
+    0 0 35px rgba(250, 204, 21, 0.85),
+    0 8px 20px rgba(0, 0, 0, 0.85);
+  transform: translateY(-2px) scale(1.02);
+}
+.royal-action-btn:active {
+  transform: translateY(1px) scale(0.99);
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.7),
+    0 0 15px rgba(245, 158, 11, 0.5);
+}
+
+/* Sculpted Dark-Bronze Navigation Cartridge */
+.royal-cartridge-btn {
+  background: linear-gradient(180deg, rgba(28, 36, 60, 0.95) 0%, rgba(16, 22, 38, 0.95) 60%, rgba(9, 13, 24, 0.98) 100%);
+  border: 1.5px solid #8e6822;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 230, 160, 0.2),
+    inset 0 0 12px rgba(0, 0, 0, 0.6),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-out;
+}
+.royal-cartridge-btn:hover {
+  background: linear-gradient(180deg, rgba(38, 48, 80, 0.95) 0%, rgba(22, 30, 52, 0.95) 60%, rgba(13, 18, 32, 0.98) 100%);
+  border-color: #d4af37;
+  box-shadow:
+    inset 0 1px 2px rgba(255, 240, 180, 0.35),
+    0 0 18px rgba(212, 175, 55, 0.35),
+    0 6px 16px rgba(0, 0, 0, 0.6);
+  transform: translateY(-1.5px);
+}
+
+/* Royal Medallion Badge (Laurel / Stats / Icons) */
+.royal-medallion {
+  background: linear-gradient(180deg, #3d2a13 0%, #24180a 60%, #120c04 100%);
+  border: 1.5px solid #d4af37;
+  box-shadow:
+    inset 0 1px 2px rgba(255, 235, 175, 0.3),
+    0 0 12px rgba(212, 175, 55, 0.35),
+    0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* The Golden Dharma Royal Road */
+.royal-dharma-road {
+  background: linear-gradient(180deg, #ffd700 0%, #b8860b 50%, #ffd700 100%);
+  box-shadow:
+    0 0 12px rgba(245, 158, 11, 0.6),
+    0 0 24px rgba(212, 175, 55, 0.3);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #certificate-print-zone, #certificate-print-zone * {
+    visibility: visible;
+  }
+  #certificate-print-zone {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
