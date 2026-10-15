@@ -692,9 +692,9 @@ export const QuizContainer: React.FC = () => {
           mistakes={mistakes}
           onClose={() => {
             setShowLevelComplete(false);
-            if (level.levelNumber === 50) {
+            if (level.levelNumber === 1000) {
               setScreen('scholar_page');
-            } else if (level.levelNumber % 5 === 0) {
+            } else if (level.levelNumber % 100 === 0) {
               setScreen('wallpaper_gallery');
             } else {
               setScreen('story_map');

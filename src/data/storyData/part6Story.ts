@@ -179,10 +179,13 @@ export const PART_6_STORY: StoryPart = {
       speaker: 'Lord Surya bestowing the Akshayapatra',
       speaker_te: 'ధర్మరాజుకు అక్షయపాత్రనిస్తూ సూర్యదేవుడు',
       speaker_hi: 'सूर्यदेव द्वारा युधिष्ठिर को वरदान',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/storybook/page_39_0_Image0.jpg',
       imageCaption: 'Yudhishthira receiving the glowing copper Akshayapatra from the radiant Sun God.',
       imageCaption_te: 'సూర్యదేవుని నుండి దివ్య అక్షయపాత్రను స్వీకరిస్తున్న ధర్మరాజు.',
-      imageCaption_hi: 'भगवान सूर्य के कर-कमलों से अक्षयपात्र प्राप्त करते धर्मराज युधिष्ठिर।'
+      imageCaption_hi: 'भगवान सूर्य के कर-कमलों से अक्षयपात्र प्राप्त करते धर्मराज युधिष्ठिर।',
+      moralLesson: "Humility before the Divine and enduring austerities unlock the ultimate celestial blessings.",
+      moralLesson_te: "దైవం ముందు వినయం మరియు కఠోర సాధనే సర్వోత్కృష్టమైన దివ్యాస్త్రాలను ప్రసాదిస్తాయి.",
+      moralLesson_hi: "परमात्मा के सम्मुख समर्पण और कठिन तपस्या ही जीवन के सबसे दिव्य अस्त्रों की प्राप्ति कराती है।"
     },
     {
       pageNumber: 2,
@@ -216,10 +219,13 @@ export const PART_6_STORY: StoryPart = {
       speaker: 'Lord Shiva granting Pashupatastra',
       speaker_te: 'పాశుపతాస్త్రాన్ని ప్రసాదిస్తూ పరమేశ్వరుడు',
       speaker_hi: 'भगवान शिव का अर्जुन को आशीर्वाद',
-      imageUrl: '/assets/wallpapers/arjuna.jpg',
+      imageUrl: '/assets/storybook/page_45_0_Image0.jpg',
       imageCaption: 'Lord Shiva in radiant divine majesty bestowing the blazing Pashupatastra upon Arjuna.',
       imageCaption_te: 'అర్జునునికి పాశుపతాస్త్రాన్ని అనుగ్రహిస్తున్న పరమశివుడు.',
-      imageCaption_hi: 'अर्जुन को दिव्य पाशुपतास्त्र प्रदान करते देवाधिदेव महादेव।'
+      imageCaption_hi: 'अर्जुन को दिव्य पाशुपतास्त्र प्रदान करते देवाधिदेव महादेव।',
+      moralLesson: "Great souls gracefully accept humble duties, proving that dignity resides within, not in royal robes.",
+      moralLesson_te: "మహాపురుషులు ఎంతటి చిన్న పనినైనా గౌరవంగా చేస్తారు; ఔన్నత్యం మనిషి గుణంలో ఉంటుంది.",
+      moralLesson_hi: "महान आत्माएँ परिस्थितियों के अनुसार छोटे कार्य भी पूरी निष्ठा और गरिमा से करती हैं।"
     },
     {
       pageNumber: 3,
@@ -253,10 +259,13 @@ export const PART_6_STORY: StoryPart = {
       speaker: 'The Yaksha’s Cosmic Inquest',
       speaker_te: 'యక్షుని గంభీర ప్రశ్నలు',
       speaker_hi: 'यक्ष के अलौकिक प्रश्न',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/storybook/page_45_1_Image1.jpg',
       imageCaption: 'Yudhishthira standing peacefully beside the enchanted lake, conversing with the glowing Yaksha.',
       imageCaption_te: 'మాయా సరస్సు తీరాన యక్షుని ప్రశ్నలకు సమాధానమిస్తున్న ధర్మరాజు.',
-      imageCaption_hi: 'मायावी सरोवर तट पर यक्ष के प्रश्नों का शांत भाव से उत्तर देते युधिष्ठिर।'
+      imageCaption_hi: 'मायावी सरोवर तट पर यक्ष के प्रश्नों का शांत भाव से उत्तर देते युधिष्ठिर।',
+      moralLesson: "Lust and violence against women ignite a fury that crushes the most powerful oppressors.",
+      moralLesson_te: "స్త్రీలను కించపరిచే కామాంధులకు ఎంతటి బలమున్నా సర్వనాశనం తప్పదు.",
+      moralLesson_hi: "नारी का अपमान और कामुकता बड़े से बड़े सेनापति को भी मिट्टी में मिला देती है।"
     },
     {
       pageNumber: 4,
@@ -290,10 +299,13 @@ export const PART_6_STORY: StoryPart = {
       speaker: 'Lord Dharma blessing Yudhishthira',
       speaker_te: 'ధర్మరాజును ఆశీర్వదిస్తూ యమధర్మరాజు',
       speaker_hi: 'यमराज द्वारा धर्मराज को दिव्य वरदान',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'The four brothers awakening to life as Lord Dharma showers golden light upon them.',
       imageCaption_te: 'యమధర్మరాజు అనుగ్రహంతో తిరిగి ప్రాణం పోసుకున్న నలుగురు పాండవులు.',
-      imageCaption_hi: 'धर्मराज यम के आशीर्वाद से चारों भाइयों के पुनर्जीवित होने का अद्भुत दृश्य।'
+      imageCaption_hi: 'धर्मराज यम के आशीर्वाद से चारों भाइयों के पुनर्जीवित होने का अद्भुत दृश्य।',
+      moralLesson: "Justice delayed is not denied; righteous wrath delivers retribution to every arrogant predator.",
+      moralLesson_te: "అన్యాయాన్ని సహించకూడదు; సరైన సమయంలో పరాక్రమంతో న్యాయాన్ని రక్షించాలి.",
+      moralLesson_hi: "अधर्म और दुराचार का अंत सदैव भयानक और अचूक न्याय के साथ होता है।"
     },
     {
       pageNumber: 5,
@@ -327,10 +339,13 @@ export const PART_6_STORY: StoryPart = {
       speaker: 'Arjuna blessing the Shami Tree',
       speaker_te: 'జమ్మి చెట్టును ప్రార్థిస్తూ అర్జునుడు',
       speaker_hi: 'शमी वृक्ष पर गांडीव छिपाते अर्जुन',
-      imageUrl: '/assets/wallpapers/bhima.jpg',
+      imageUrl: '/assets/wallpapers/arjuna.jpg',
       imageCaption: 'The sacred Shami tree in the twilight concealing the celestial weapons of the Pandavas.',
       imageCaption_te: 'పాండవుల దివ్యాస్త్రాలను తనలో దాచుకున్న పవిత్ర జమ్మి చెట్టు.',
-      imageCaption_hi: 'शमी वृक्ष पर दिव्य गांडीव और अस्त्रों को सुरक्षित छिपाने का दृश्य।'
+      imageCaption_hi: 'शमी वृक्ष पर दिव्य गांडीव और अस्त्रों को सुरक्षित छिपाने का दृश्य।',
+      moralLesson: "True heroes remain composed in testing times; courage shines when the critical hour strikes.",
+      moralLesson_te: "నిజమైన వీరులు ఆపద సమయాల్లో తొణకరు; సమయం వచ్చినప్పుడు వారి పరాక్రమం వెలుగుచూస్తుంది.",
+      moralLesson_hi: "विपत्ति में घबराए बिना कर्तव्य पर डटे रहना ही सच्चे वीर की पहचान है।"
     },
     {
       pageNumber: 6,
@@ -364,10 +379,13 @@ export const PART_6_STORY: StoryPart = {
       speaker: 'Draupadi warning Keechaka',
       speaker_te: 'కీచకుడిని హెచ్చరిస్తున్న ద్రౌపది',
       speaker_hi: 'द्रौपदी की कीचक को अंतिम चेतावनी',
-      imageUrl: '/assets/wallpapers/draupadi.jpg',
+      imageUrl: '/assets/wallpapers/abhimanyu.jpg',
       imageCaption: 'Draupadi weeping in humiliation before the constrained Bhima in the royal kitchen.',
       imageCaption_te: 'వంటశాలలో భీముని ముందు కన్నీరు మున్నీరవుతున్న ద్రౌపది.',
-      imageCaption_hi: 'रसोई में भीम के सम्मुख न्याय की गुहार लगाती अपमानित द्रौपदी।'
+      imageCaption_hi: 'रसोई में भीम के सम्मुख न्याय की गुहार लगाती अपमानित द्रौपदी।',
+      moralLesson: "Patience through hardship leads to honourable reunions, powerful alliances, and cosmic victory.",
+      moralLesson_te: "కష్టాలలో నిలకడగా ఉన్నవారికి భవిష్యత్తులో గౌరవం మరియు శక్తిమంతమైన మిత్రులు లభిస్తారు.",
+      moralLesson_hi: "धैर्यपूर्वक कष्ट सहने वालों का अंत सदैव सम्मानजनक और विजयगामी होता है।"
     },
     {
       pageNumber: 7,
@@ -401,10 +419,13 @@ export const PART_6_STORY: StoryPart = {
       speaker: 'Bhima standing over the slain Keechaka',
       speaker_te: 'కీచకుని శవంపై భీముని గర్జన',
       speaker_hi: 'कीचक के वध पर भीमसेन के शब्द',
-      imageUrl: '/assets/wallpapers/bhima.jpg',
+      imageUrl: '/assets/storybook/page_48_0_Image0.jpg',
       imageCaption: 'Mighty Bhima after the duel in the dark dancing hall of Matsya.',
       imageCaption_te: 'చీకటి నాట్యశాలలో కీచకుడిని సంహరించిన అనంతరం భీమసేనుడు.',
-      imageCaption_hi: 'नृत्यशाला में कीचक का संहार कर धर्म की रक्षा करते महाबली भीम।'
+      imageCaption_hi: 'नृत्यशाला में कीचक का संहार कर धर्म की रक्षा करते महाबली भीम।',
+      moralLesson: "Choosing God over worldly power and massive armies guarantees eternal victory and peace.",
+      moralLesson_te: "భౌతిక సైన్యాల కంటే భగవంతుని తోడును కోరుకోవడమే శాశ్వత విజయానికి ఏకైక మార్గం.",
+      moralLesson_hi: "सांसारिक सेना और धन के स्थान पर ईश्वर का साथ चुनना ही जीवन की सबसे बड़ी बुद्धिमानी है।"
     },
     {
       pageNumber: 8,
@@ -438,10 +459,13 @@ export const PART_6_STORY: StoryPart = {
       speaker: 'Arjuna revealing himself to Prince Uttara',
       speaker_te: 'ఉత్తర కుమారునికి నిజం చెబుతున్న అర్జునుడు',
       speaker_hi: 'उत्तर कुमार को गांडीव दिखाते हुए अर्जुन',
-      imageUrl: '/assets/wallpapers/arjuna.jpg',
+      imageUrl: '/assets/wallpapers/krishna.jpg',
       imageCaption: 'Arjuna on the chariot with Gandiva bow ablaze, sweeping across the battlefield of Virata.',
       imageCaption_te: 'గాండీవ ధనుస్సుతో కౌరవ సైన్యాన్ని గడగడలాడిస్తున్న అర్జునుడు.',
-      imageCaption_hi: 'विराट नगर के रणक्षेत्र में गांडीव से कौरव सेना को परास्त करते महाधनुर्धर अर्जुन।'
+      imageCaption_hi: 'विराट नगर के रणक्षेत्र में गांडीव से कौरव सेना को परास्त करते महाधनुर्धर अर्जुन।',
+      moralLesson: "No earthly chains can bind the infinite Divine; arrogant tyrants only bind their own doom.",
+      moralLesson_te: "పరమాత్ముని బంధించడం ఎవరి వల్లా కాదు; అహంకారం వినాశనానికే దారితీస్తుంది.",
+      moralLesson_hi: "अनंत परमात्मा को अहंकार की बेड़ियों में बाँधने की चेष्टा करने वाले स्वयं नष्ट हो जाते हैं।"
     }
   ],
 

@@ -163,10 +163,13 @@ export const PART_2_STORY: StoryPart = {
       speaker: 'King Pandu to Kunti',
       speaker_te: 'కుంతీదేవితో పాండురాజు',
       speaker_hi: 'महाराज पांडु का कुंती से निवेदन',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/storybook/page_15_0_Image0.jpg',
       imageCaption: 'Queen Kunti invoking the sun and celestial deities with folded hands on the sacred mountain.',
       imageCaption_te: 'శతశృంగ పర్వతంపై మంత్రాలతో దేవతలను ఆవాహన చేస్తున్న కుంతీదేవి.',
-      imageCaption_hi: 'पर्वत शिखर पर मंत्रोच्चार द्वारा देवताओं का आह्वान करतीं माता कुंती।'
+      imageCaption_hi: 'पर्वत शिखर पर मंत्रोच्चार द्वारा देवताओं का आह्वान करतीं माता कुंती।',
+      moralLesson: "Accountability and humility are the true hallmarks of greatness; unintended errors still carry karmic weight.",
+      moralLesson_te: "పొరపాటున చేసిన తప్పైనా కర్మఫలాన్ని కలిగిస్తుంది; బాధ్యతను, వినయాన్ని స్వీకరించడమే ఉత్తమ గుణం.",
+      moralLesson_hi: "भूल अनजाने में भी हो तो उसका फल भुगतना पड़ता है; पश्चात्ताप और सत्यनिष्ठा ही चरित्र को पावन बनाते हैं।"
     },
     {
       pageNumber: 2,
@@ -200,10 +203,13 @@ export const PART_2_STORY: StoryPart = {
       speaker: 'Vidura warning King Dhritarashtra',
       speaker_te: 'ధృతరాష్ట్రుడిని హెచ్చరిస్తున్న విదురుడు',
       speaker_hi: 'धृतराष्ट्र को चेतावनी देते महात्मा विदुर',
-      imageUrl: '/assets/wallpapers/bhima.jpg',
+      imageUrl: '/assets/storybook/page_18_0_Image0.jpg',
       imageCaption: 'The five young Pandava brothers in the forest, surrounded by sages and wildlife.',
       imageCaption_te: 'శతశృంగ ఆశ్రమంలో ఋషుల ఆశీస్సులతో పెరుగుతున్న ఐదుగురు పాండవులు.',
-      imageCaption_hi: 'ऋषि आश्रम में संतों के सान्निध्य में बड़े होते पाँचों पांडव बालक।'
+      imageCaption_hi: 'ऋषि आश्रम में संतों के सान्निध्य में बड़े होते पाँचों पांडव बालक।',
+      moralLesson: "Righteousness, strength, focus, beauty, and wisdom together create an unconquerable foundation for destiny.",
+      moralLesson_te: "ధర్మం, బలం, ఏకాగ్రత, సౌందర్యం మరియు వివేకం కలిసినప్పుడే జీవితానికి అసలైన విజయం లభిస్తుంది.",
+      moralLesson_hi: "धर्म, शक्ति, एकाग्रता, सौंदर्य और विवेक का समन्वय ही जीवन में अपराजेय शक्ति बनता है।"
     },
     {
       pageNumber: 3,
@@ -237,10 +243,13 @@ export const PART_2_STORY: StoryPart = {
       speaker: 'Queen Madri’s parting prayer',
       speaker_te: 'మాద్రి చివరి మాటలు',
       speaker_hi: 'रानी माद्री की अंतिम प्रार्थना',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/storybook/page_19_0_Image0.jpg',
       imageCaption: 'Queen Kunti bringing the five young Pandavas before Grandfather Bhishma and King Dhritarashtra.',
       imageCaption_te: 'భీష్ముని ఎదుట ఐదుగురు పాండవులను నిలబెట్టిన కుంతీదేవి.',
-      imageCaption_hi: 'पितामह भीष्म के सम्मुख पाँचों बालकों को प्रस्तुत करतीं माता कुंती।'
+      imageCaption_hi: 'पितामह भीष्म के सम्मुख पाँचों बालकों को प्रस्तुत करतीं माता कुंती।',
+      moralLesson: "A mother’s selfless devotion and steadfast courage can guide a family safely through the deepest grief.",
+      moralLesson_te: "తల్లి యొక్క నిస్వార్థ ప్రేమ, ధైర్యమే ఎంతటి మహా విపత్తులోనైనా కుటుంబాన్ని కాపాడతాయి.",
+      moralLesson_hi: "माता का निस्वार्थ त्याग और धैर्य ही सबसे कठिन संकटों में भी परिवार का संबल बनता है।"
     },
     {
       pageNumber: 4,
@@ -277,7 +286,10 @@ export const PART_2_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/dronacharya.jpg',
       imageCaption: 'Dronacharya effortlessly drawing the ball from the deep well with linked grass blades.',
       imageCaption_te: 'గడ్డి పోచలతో బావి నుండి బంతిని పైకి లాగుతున్న ద్రోణాచార్యుడు.',
-      imageCaption_hi: 'तिनकों की श्रृंखला से कुएं से गेंद निकालते आचार्य द्रोण।'
+      imageCaption_hi: 'तिनकों की श्रृंखला से कुएं से गेंद निकालते आचार्य द्रोण।',
+      moralLesson: "True wisdom recognizes talent and humility, not merely birthright or royal pedigree.",
+      moralLesson_te: "నిజమైన జ్ఞానం ప్రతిభను, వినయాన్ని గుర్తిస్తుంది; కేవలం వంశాన్ని బట్టి మనిషిని అంచనా వేయకూడదు.",
+      moralLesson_hi: "सच्चा गुरु और ज्ञानी वही है जो कुल के स्थान पर विनम्रता और प्रतिभा को पहचानता है।"
     },
     {
       pageNumber: 5,
@@ -314,7 +326,10 @@ export const PART_2_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/arjuna.jpg',
       imageCaption: 'Young Arjuna taking dead aim at the wooden bird under the proud gaze of Dronacharya.',
       imageCaption_te: 'గురువు ద్రోణుని ఎదుట పిట్ట కంటిపై గురిపెట్టిన అర్జునుడు.',
-      imageCaption_hi: 'आचार्य द्रोण की उपस्थिति में चिड़िया की आँख पर संधान करते वीर अर्जुन।'
+      imageCaption_hi: 'आचार्य द्रोण की उपस्थिति में चिड़िया की आँख पर संधान करते वीर अर्जुन।',
+      moralLesson: "Single-minded focus and unwavering dedication turn ordinary effort into extraordinary mastery.",
+      moralLesson_te: "లక్ష్యంపై నిశ్చలమైన ఏకాగ్రత మరియు అచంచలమైన సాధనే సామాన్యుడిని అద్భుత ప్రతిభావంతుడిగా మారుస్తాయి.",
+      moralLesson_hi: "अविचल एकाग्रता और सतत अभ्यास ही साधारण मनुष्य को अद्वितीय महारथी बना देते हैं।"
     },
     {
       pageNumber: 6,
@@ -351,7 +366,10 @@ export const PART_2_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/dronacharya.jpg',
       imageCaption: 'Ekalavya bowing with divine devotion before the clay idol of Guru Drona.',
       imageCaption_te: 'మట్టి ద్రోణుని విగ్రహం ఎదుట చేతులు జోడించి నమస్కరిస్తున్న ఏకలవ్యుడు.',
-      imageCaption_hi: 'गुरु द्रोण की मिट्टी की प्रतिमा के सामने नतमस्तक वीर एकलव्य।'
+      imageCaption_hi: 'गुरु द्रोण की मिट्टी की प्रतिमा के सामने नतमस्तक वीर एकलव्य।',
+      moralLesson: "Supreme devotion and gratitude immortalize a student, transcending worldly obstacles.",
+      moralLesson_te: "గురుభక్తి మరియు అంకితభావం విద్యార్థిని అమరుడిని చేస్తాయి; గురుదక్షిణ త్యాగానికి పరాకాష్ట.",
+      moralLesson_hi: "गुरु के प्रति निष्कपट समर्पण और कृतज्ञता ही सच्ची साधना है, जो इतिहास में अमर हो जाती है।"
     },
     {
       pageNumber: 7,
@@ -385,10 +403,13 @@ export const PART_2_STORY: StoryPart = {
       speaker: 'Drona forgiving King Drupada',
       speaker_te: 'ద్రుపదుడికి రాజ్యం పంచుతున్న ద్రోణుడు',
       speaker_hi: 'द्रुपद से आचार्य द्रोण के वचन',
-      imageUrl: '/assets/wallpapers/dronacharya.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'Arjuna presenting the captured King Drupada before Guru Dronacharya.',
       imageCaption_te: 'బంధీగా పట్టుబడిన ద్రుపదుడిని ద్రోణాచార్యునికి అప్పగిస్తున్న అర్జునుడు.',
-      imageCaption_hi: 'द्रोणाचार्य के समक्ष बंदी द्रुपद को प्रस्तुत करते वीर अर्जुन।'
+      imageCaption_hi: 'द्रोणाचार्य के समक्ष बंदी द्रुपद को प्रस्तुत करते वीर अर्जुन।',
+      moralLesson: "Arrogance built on power always crumbles before united skill and righteous duty.",
+      moralLesson_te: "అధికార గర్వం ఎల్లప్పుడూ ధర్మం మరియు నైపుణ్యం ముందు తలవంచక తప్పదు.",
+      moralLesson_hi: "शक्ति का अहंकार चाहे कितना भी बड़ा हो, धर्म और निष्ठावान पराक्रम के आगे झुक ही जाता है।"
     },
     {
       pageNumber: 8,
@@ -425,7 +446,10 @@ export const PART_2_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/karna.jpg',
       imageCaption: 'Duryodhana placing the golden crown of Anga upon the head of radiant Karna.',
       imageCaption_te: 'కర్ణుని శిరస్సుపై అంగరాజ్య కిరీటాన్ని అలంకరిస్తున్న దుర్యోధనుడు.',
-      imageCaption_hi: 'कर्ण के सिर पर अंगदेश का मुकुट रखते हुए युवराज दुर्योधन।'
+      imageCaption_hi: 'कर्ण के सिर पर अंगदेश का मुकुट रखते हुए युवराज दुर्योधन।',
+      moralLesson: "True character is defined by actions and virtue, yet loyalty to unrighteous friendship brings inevitable tragedy.",
+      moralLesson_te: "వ్యక్తి గొప్పతనం గుణాలను బట్టే ఉంటుంది; కానీ అధర్మానికి చేసిన సహాయం చివరకు పతనానికి దారితీస్తుంది.",
+      moralLesson_hi: "मित्रता अनमोल है, किंतु अधर्म का साथ देने वाली निष्ठा अंततः सर्वनाश का कारण बनती है।"
     }
   ],
 

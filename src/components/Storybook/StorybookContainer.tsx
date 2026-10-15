@@ -33,7 +33,7 @@ export const StorybookContainer: React.FC = () => {
     return part.summary;
   };
 
-  const firstLevelNumber = (part.partNumber - 1) * 10 + 1;
+  const firstLevelNumber = (part.partNumber - 1) * 100 + 1;
 
   const handleStepChange = (step: StorybookStep) => {
     audioService.playClick();
@@ -261,10 +261,10 @@ export const StorybookContainer: React.FC = () => {
               {/* Quiz Teaser */}
               <div className="pt-2 text-xs text-amber-400/60 font-serif">
                 {language === 'te'
-                  ? `ఈ కథ పూర్తయిన తర్వాత ${firstLevelNumber} నుండి ${part.partNumber * 10} వరకు 10 క్విజ్ స్థాయిలు ప్రారంభమవుతాయి.`
+                  ? `ఈ కథ పూర్తయిన తర్వాత ${firstLevelNumber} నుండి ${part.partNumber * 100} వరకు 100 క్విజ్ స్థాయిలు ప్రారంభమవుతాయి.`
                   : language === 'hi'
-                  ? `इस कथा के उपरांत स्तर ${firstLevelNumber} से ${part.partNumber * 10} तक 10 प्रश्नोत्तरी स्तर आरंभ होंगे।`
-                  : `10 Quiz Levels (${firstLevelNumber}–${part.partNumber * 10}) follow upon completing this story.`}
+                  ? `इस कथा के उपरांत स्तर ${firstLevelNumber} से ${part.partNumber * 100} तक 100 प्रश्नोत्तरी स्तर आरंभ होंगे।`
+                  : `100 Quiz Levels (${firstLevelNumber}–${part.partNumber * 100}) follow upon completing this story.`}
               </div>
             </div>
           </div>
@@ -298,9 +298,11 @@ export const StorybookContainer: React.FC = () => {
             currentPageIndex={currentPageIndex}
             onPageChange={(idx) => setCurrentPageIndex(idx)}
             onFinishPages={() => handleStepChange('summary')}
+            onBackToIntro={() => handleStepChange('intro')}
             language={language}
             onLanguageChange={(lang) => setLanguage(lang)}
             partNumber={part.partNumber}
+            partTitle={getPartTitle()}
           />
         )}
 

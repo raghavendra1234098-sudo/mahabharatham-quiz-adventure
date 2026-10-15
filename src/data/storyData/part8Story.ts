@@ -175,10 +175,13 @@ export const PART_8_STORY: StoryPart = {
       speaker: 'Arjuna before the conch blowing',
       speaker_te: 'శంఖం పూరిస్తూ అర్జునుడు',
       speaker_hi: 'शंखनाद से पूर्व अर्जुन का आह्वान',
-      imageUrl: '/assets/wallpapers/arjuna.jpg',
+      imageUrl: '/assets/wallpapers/dronacharya.jpg',
       imageCaption: 'Sri Krishna blowing the Paanchajanya and Arjuna blowing the Devadatta conch at dawn.',
       imageCaption_te: 'కురుక్షేత్ర ఉదయాన పాంచజన్యం, దేవదత్త శంఖాలను పూరిస్తున్న శ్రీకృష్ణార్జునులు.',
-      imageCaption_hi: 'समरभूमि में पाञ्चजन्य और देवदत्त शंख फूंकते पार्थसारथी श्रीकृष्ण और धनुर्धर अर्जुन।'
+      imageCaption_hi: 'समरभूमि में पाञ्चजन्य और देवदत्त शंख फूंकते पार्थसारथी श्रीकृष्ण और धनुर्धर अर्जुन।',
+      moralLesson: "Ingenious battle formations test the absolute limits of strategy, bravery, and unity.",
+      moralLesson_te: "వ్యూహాలు ఎంత సంక్లిష్టమైనా ధైర్యసాహసాలు మరియు సమయస్ఫూర్తితో వాటిని ఎదుర్కోవాలి.",
+      moralLesson_hi: "कठिन से कठिन चक्रव्यूह भी अटूट साहस और दृढ़ संकल्प के आगे नतमस्तक होते हैं।"
     },
     {
       pageNumber: 2,
@@ -212,10 +215,13 @@ export const PART_8_STORY: StoryPart = {
       speaker: 'Grandsire Bhishma blessing Yudhishthira',
       speaker_te: 'ధర్మరాజును ఆశీర్వదిస్తూ భీష్ముడు',
       speaker_hi: 'भीष्म पितामह का युधिष्ठिर को विजय-आशीर्वाद',
-      imageUrl: '/assets/wallpapers/bhishma.jpg',
+      imageUrl: '/assets/wallpapers/abhimanyu.jpg',
       imageCaption: 'King Yudhishthira touching the lotus feet of Grandsire Bhishma between the two armies.',
       imageCaption_te: 'ఇరు సైన్యాల మధ్య భీష్ముని పాదాలకు నమస్కరిస్తున్న ధర్మరాజు.',
-      imageCaption_hi: 'दोनों सेनाओं के मध्य पितामह भीष्म के चरण स्पर्श करते धर्मराज युधिष्ठिर।'
+      imageCaption_hi: 'दोनों सेनाओं के मध्य पितामह भीष्म के चरण स्पर्श करते धर्मराज युधिष्ठिर।',
+      moralLesson: "Age is no barrier to immortal heroism; bravery in the face of impossible odds inspires generations.",
+      moralLesson_te: "వయస్సుతో సంబంధం లేకుండా చూపించే అద్భుత శౌర్యం తరతరాలకు స్ఫూర్తిదాయకంగా నిలుస్తుంది.",
+      moralLesson_hi: "वीरता आयु की मोहताज नहीं होती; सोलह वर्ष का अभिमन्यु अमर शौर्य का सर्वोच्च प्रतीक है।"
     },
     {
       pageNumber: 3,
@@ -249,10 +255,13 @@ export const PART_8_STORY: StoryPart = {
       speaker: 'Arjuna collapsing in despair',
       speaker_te: 'రథంలో కుప్పకూలుతూ అర్జునుడు',
       speaker_hi: 'विषादमग्न अर्जुन का विलाप',
-      imageUrl: '/assets/wallpapers/arjuna.jpg',
+      imageUrl: '/assets/wallpapers/abhimanyu.jpg',
       imageCaption: 'Arjuna sitting dejected on his chariot with his golden bow fallen, attended by Lord Krishna.',
       imageCaption_te: 'రథంపై గాండీవాన్ని జారవిడిచి విషాదంలో కూర్చున్న అర్జునుడు.',
-      imageCaption_hi: 'रथ पर गांडीव रखकर शोकमग्न बैठे अर्जुन और उन्हें देखते भगवान श्रीकृष्ण।'
+      imageCaption_hi: 'रथ पर गांडीव रखकर शोकमग्न बैठे अर्जुन और उन्हें देखते भगवान श्रीकृष्ण।',
+      moralLesson: "Breaking the codes of chivalry to slay the defenseless brings eternal dishonour and certain retribution.",
+      moralLesson_te: "నిరాయుధునిపై అధర్మంగా దాడి చేయడం క్షమించరాని పాపం; అది సర్వనాశనాన్ని ఖాయం చేస్తుంది.",
+      moralLesson_hi: "निहत्थे वीर पर अधर्म से प्रहार करने वालों की विजय कभी वास्तविक विजय नहीं हो सकती।"
     },
     {
       pageNumber: 4,
@@ -286,10 +295,13 @@ export const PART_8_STORY: StoryPart = {
       speaker: 'Lord Sri Krishna in the Bhagavad Gita',
       speaker_te: 'శ్రీకృష్ణుని దివ్య గీతా బోధన',
       speaker_hi: 'भगवान श्रीकृष्ण का अमर गीता-उपदेश',
-      imageUrl: '/assets/wallpapers/krishna.jpg',
+      imageUrl: '/assets/wallpapers/arjuna.jpg',
       imageCaption: 'Lord Krishna delivering the immortal Bhagavad Gita to kneeling Arjuna on the chariot.',
       imageCaption_te: 'రథంపై మోకరిల్లిన అర్జునునికి భగవద్గీతను ఉపదేశిస్తున్న శ్రీకృష్ణ పరమాత్మ.',
-      imageCaption_hi: 'युद्धक्षेत्र में अर्जुन को गीता का अमर संदेश देते जगद्गुरु श्रीकृष्ण।'
+      imageCaption_hi: 'युद्धक्षेत्र में अर्जुन को गीता का अमर संदेश देते जगद्गुरु श्रीकृष्ण।',
+      moralLesson: "Righteous anger guided by divine wisdom breaks through any conspiracy to avenge injustice.",
+      moralLesson_te: "దైవ సంకల్పంతో కూడిన ధర్మ ఆగ్రహం ఎంతటి కుట్రలనైనా ఛేదించి న్యాయాన్ని గెలిపిస్తుంది.",
+      moralLesson_hi: "न्याय की आग जब ईश्वर के मार्गदर्शन से जलती है, तो कोई भी षड्यंत्र उसे रोक नहीं सकता।"
     },
     {
       pageNumber: 5,
@@ -323,10 +335,13 @@ export const PART_8_STORY: StoryPart = {
       speaker: 'Lord Krishna in Vishwaroopa',
       speaker_te: 'విశ్వరూపంలో పరమాత్ముని వాక్కు',
       speaker_hi: 'विराटरूप में भगवान का आदेश',
-      imageUrl: '/assets/wallpapers/krishna.jpg',
+      imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'The dazzling cosmic Vishwaroopa radiating across the sky of Kurukshetra before awestruck Arjuna.',
       imageCaption_te: 'కురుక్షేత్ర ఆకాశంలో వెలిగిపోతున్న శ్రీకృష్ణుని అద్భుత విశ్వరూపం.',
-      imageCaption_hi: 'कुरुक्षेत्र के गगन में दैदीप्यमान भगवान श्रीकृष्ण का विराट विश्वरूप।'
+      imageCaption_hi: 'कुरुक्षेत्र के गगन में दैदीप्यमान भगवान श्रीकृष्ण का विराट विश्वरूप।',
+      moralLesson: "Sacrificing one’s life to protect the supreme leader of righteousness is the highest warrior glory.",
+      moralLesson_te: "ధర్మపరుల ప్రాణాల కోసం ప్రాణత్యాగం చేయడం యోధునికి పరమ పవిత్రమైన గౌరవాన్ని తెస్తుంది.",
+      moralLesson_hi: "धर्म के मुख्य स्तम्भों की रक्षा हेतु अपने प्राणों का बलिदान देना ही परम वीरगति है।"
     },
     {
       pageNumber: 6,
@@ -360,10 +375,13 @@ export const PART_8_STORY: StoryPart = {
       speaker: 'Bhishma’s vow on the 9th night',
       speaker_te: 'తొమ్మిదో రోజు రాత్రి భీష్ముని శపథం',
       speaker_hi: 'नवें दिन की संध्या पर भीष्म की प्रतिज्ञा',
-      imageUrl: '/assets/wallpapers/bhishma.jpg',
+      imageUrl: '/assets/wallpapers/dronacharya.jpg',
       imageCaption: 'Grandsire Bhishma with his silver bow wreaking devastation across the Pandava ranks.',
       imageCaption_te: 'కురుక్షేత్రంలో పాండవ సైన్యాన్ని గడగడలాడిస్తున్న భీష్మ పితామహుడు.',
-      imageCaption_hi: 'समरभूमि में भीषण बाणवर्षा करते कौरव सेनापति भीष्म पितामह।'
+      imageCaption_hi: 'समरभूमि में भीषण बाणवर्षा करते कौरव सेनापति भीष्म पितामह।',
+      moralLesson: "Even preceptors of celestial wisdom fall when they compromise morality to defend an unjust king.",
+      moralLesson_te: "ఎంతటి గొప్ప గురువులైనా అధర్మానికి రక్షణగా నిలిచినప్పుడు పతనం కాక తప్పదు.",
+      moralLesson_hi: "संसार के सर्वश्रेष्ठ गुरु भी यदि अधर्म के पक्ष में शस्त्र उठाएँ, तो उनका पतन निश्चित है।"
     },
     {
       pageNumber: 7,
@@ -397,10 +415,13 @@ export const PART_8_STORY: StoryPart = {
       speaker: 'Bhishma welcoming Krishna’s charge',
       speaker_te: 'కృష్ణుని చూసి పులకించిన భీష్ముడు',
       speaker_hi: 'भीष्म का श्रीकृष्ण के चरणों में समर्पण',
-      imageUrl: '/assets/wallpapers/bhishma.jpg',
+      imageUrl: '/assets/wallpapers/karna.jpg',
       imageCaption: 'Lord Krishna charging toward Bhishma with a raised chariot wheel while Arjuna clings to His feet.',
       imageCaption_te: 'రథచక్రాన్ని ఎత్తి పరుగుతీస్తున్న శ్రీకృష్ణుడు; పాదాలను పట్టుకుని ఆపుతున్న అర్జునుడు.',
-      imageCaption_hi: 'रथ का पहिया लेकर भीष्म की ओर दौड़ते श्रीकृष्ण और उनके चरण पकड़ते अर्जुन।'
+      imageCaption_hi: 'रथ का पहिया लेकर भीष्म की ओर दौड़ते श्रीकृष्ण और उनके चरण पकड़ते अर्जुन।',
+      moralLesson: "Supreme talent clashed against divine purpose shows that righteousness, not pride, decides destiny.",
+      moralLesson_te: "అపారమైన ప్రతిభ ఉన్నప్పటికీ, ధర్మం వైపు నిలబడకపోతే విజయం దక్కదు.",
+      moralLesson_hi: "असीम प्रतिभा भी यदि धर्म के विपरीत दिशा में चले, तो पराजय ही उसका अंतिम पड़ाव होती है।"
     },
     {
       pageNumber: 8,
@@ -434,10 +455,13 @@ export const PART_8_STORY: StoryPart = {
       speaker: 'Bhishma resting on the Bed of Arrows',
       speaker_te: 'అంపశయ్యపై భీష్ముని చివరి మాటలు',
       speaker_hi: 'शरशय्या पर लेटे भीष्म पितामह के उद्गार',
-      imageUrl: '/assets/wallpapers/bhishma.jpg',
+      imageUrl: '/assets/wallpapers/karna.jpg',
       imageCaption: 'Grandsire Bhishma resting peacefully on the bed of arrows as warriors of both sides bow in weeping reverence.',
       imageCaption_te: 'కురుక్షేత్రంలో అంపశయ్యపై ఒరిగిన భీష్మునికి నమస్కరిస్తున్న ఇరు పక్షాల వీరులు.',
-      imageCaption_hi: 'शरशय्या पर विश्राम करते भीष्म पितामह और नतमस्तक होते दोनों सेनाओं के महारथी।'
+      imageCaption_hi: 'शरशय्या पर विश्राम करते भीष्म पितामह और नतमस्तक होते दोनों सेनाओं के महारथी।',
+      moralLesson: "You cannot appeal to chivalry in danger if you remained a silent spectator while others were disgraced.",
+      moralLesson_te: "ఇతరులకు అన్యాయం జరిగినప్పుడు మౌనంగా ఉన్నవారు, తమకు ఆపద వచ్చినప్పుడు ధర్మాన్ని వేడుకోలేరు.",
+      moralLesson_hi: "जब दूसरों का चीरहरण और वध हो रहा था तब मौन रहने वाले संकट में धर्म की दुहाई नहीं दे सकते।"
     }
   ],
 

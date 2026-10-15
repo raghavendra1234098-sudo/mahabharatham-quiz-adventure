@@ -178,10 +178,13 @@ export const PART_5_STORY: StoryPart = {
       speaker: 'Shakuni tempting Duryodhana',
       speaker_te: 'దుర్యోధనునికి ఉత్సాహం నూరుతున్న శకుని',
       speaker_hi: 'शकुनि का कुटिल आश्वासन',
-      imageUrl: '/assets/wallpapers/sanatana-dharma.jpg',
+      imageUrl: '/assets/storybook/page_52_0_Image0.jpg',
       imageCaption: 'Shakuni whispering the venomous scheme of loaded dice into Duryodhana\'s ear.',
       imageCaption_te: 'దుర్యోధనుని చెవిలో మాయాజూదపు పన్నాగం నూరుతున్న శకుని.',
-      imageCaption_hi: 'दुर्योधन के कान में द्यूत के षड्यंत्र का विष घोलते कपटी शकुनि।'
+      imageCaption_hi: 'दुर्योधन के कान में द्यूत के षड्यंत्र का विष घोलते कपटी शकुनि।',
+      moralLesson: "Gambling and greed blind even the most ethical minds; avoid vices that compromise honour.",
+      moralLesson_te: "జూదం మరియు దురాశ ఎంతటి జ్ఞానులనైనా విచక్షణారహితులుగా మారుస్తాయి; దుర్వ్యసనాలకు దూరంగా ఉండాలి.",
+      moralLesson_hi: "जुआ और लालच धर्मराज को भी अधर्म की ओर धकेल देते हैं; कुव्यसनों से सदा दूर रहना चाहिए।"
     },
     {
       pageNumber: 2,
@@ -215,10 +218,13 @@ export const PART_5_STORY: StoryPart = {
       speaker: 'Shakuni mocking Yudhishthira at the board',
       speaker_te: 'విజయోన్మాదంతో శకుని',
       speaker_hi: 'शकुनि का अहंकार भरा अट्टहास',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/storybook/page_32_0_Image0.jpg',
       imageCaption: 'The tragic Emperor Yudhishthira staring in disbelief at the loaded dice on the gambling cloth.',
       imageCaption_te: 'పాచికల వైపు దిక్కుతోచక చూస్తున్న ధర్మరాజు.',
-      imageCaption_hi: 'चौपड़ पर सब कुछ गंवाते शोकमग्न धर्मराज युधिष्ठिर।'
+      imageCaption_hi: 'चौपड़ पर सब कुछ गंवाते शोकमग्न धर्मराज युधिष्ठिर।',
+      moralLesson: "When material wealth is staked, relationships and human dignity soon follow into degradation.",
+      moralLesson_te: "సంపద కోసం ధర్మాన్ని పణంగా పెడితే చివరకు ఆత్మీయులు మరియు ఆత్మగౌరవం కూడా నాశనమవుతాయి.",
+      moralLesson_hi: "धन और पद को दाँव पर लगाने की प्रवृत्ति अंततः मान-मर्यादा और संबंधों को भी नष्ट कर देती है।"
     },
     {
       pageNumber: 3,
@@ -252,10 +258,13 @@ export const PART_5_STORY: StoryPart = {
       speaker: 'Elders gasping in horror',
       speaker_te: 'హాహాకారాలు చేస్తున్న సభికులు',
       speaker_hi: 'सभासदों का भयभीत क्रंदन',
-      imageUrl: '/assets/wallpapers/draupadi.jpg',
+      imageUrl: '/assets/storybook/page_33_0_Image0.jpg',
       imageCaption: 'The assembly freezing in horror as Yudhishthira stakes Empress Draupadi.',
       imageCaption_te: 'ధర్మరాజు ద్రౌపదిని పందెంగా పెట్టగానే నిర్ఘాంతపోయిన కురు సభ.',
-      imageCaption_hi: 'द्रौपदी को दांव पर लगते देख सन्न रह गई संपूर्ण हस्तिनापुर सभा।'
+      imageCaption_hi: 'द्रौपदी को दांव पर लगते देख सन्न रह गई संपूर्ण हस्तिनापुर सभा।',
+      moralLesson: "The silence of wise elders during the violation of a woman’s dignity is the greatest sin of any era.",
+      moralLesson_te: "సభలో అన్యాయం జరుగుతున్నప్పుడు పెద్దల మౌనమే సమాజ వినాశనానికి ప్రధాన కారణం.",
+      moralLesson_hi: "सभामध्य में नारी का अपमान होते देख मौन रहना संसार का सबसे बड़ा अधर्म और महापाप है।"
     },
     {
       pageNumber: 4,
@@ -292,7 +301,10 @@ export const PART_5_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/draupadi.jpg',
       imageCaption: 'Empress Draupadi standing violated yet regal in the center of the assembly hall.',
       imageCaption_te: 'సభ మధ్యలో అవమాన భారంతో నిలబడిన ద్రౌపదీ దేవి.',
-      imageCaption_hi: 'भरी सभा में केश खींचे जाने पर भी आत्मसम्मान से दमकती महारानी द्रौपदी।'
+      imageCaption_hi: 'भरी सभा में केश खींचे जाने पर भी आत्मसम्मान से दमकती महारानी द्रौपदी।',
+      moralLesson: "When all earthly protectors fail, total surrender (Sharanagati) to God brings infinite divine grace.",
+      moralLesson_te: "లౌకిక ఆసక్తులన్నీ విఫలమైనప్పుడు భగవంతుని శరణు వేడడమే అంతులేని రక్షణను ప్రసాదిస్తుంది.",
+      moralLesson_hi: "जब संसार के सभी सहारे छूट जाते हैं, तब ईश्वर के चरणों में पूर्ण समर्पण ही रक्षा का कवच बनता है।"
     },
     {
       pageNumber: 5,
@@ -326,10 +338,13 @@ export const PART_5_STORY: StoryPart = {
       speaker: 'Draupadi indicting the Kuru Sabha',
       speaker_te: 'కురు సభను నిలదీస్తున్న ద్రౌపది',
       speaker_hi: 'द्रौपदी का ऐतिहासिक प्रश्न',
-      imageUrl: '/assets/wallpapers/bhishma.jpg',
+      imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'Bhishma Pitamaha looking down in deep sorrow, unable to counter Draupadi’s moral query.',
       imageCaption_te: 'ద్రౌపది ప్రశ్నకు సమాధానం చెప్పలేక తలదించుకున్న భీష్మ పితామహుడు.',
-      imageCaption_hi: 'द्रौपदी के धर्म-संकट पर सिर झुकाए विवश और शोकमग्न पितामह भीष्म।'
+      imageCaption_hi: 'द्रौपदी के धर्म-संकट पर सिर झुकाए विवश और शोकमग्न पितामह भीष्म।',
+      moralLesson: "Vows born from righteous wrath against injustice carry the cosmic weight of inevitable justice.",
+      moralLesson_te: "ధర్మరక్షణ కోసం మరియు అన్యాయాన్ని ఎదిరించడానికి చేసే శపథాలు విధిని సైతం మార్చగలవు.",
+      moralLesson_hi: "अन्याय के विरुद्ध आत्मा से निकली प्रतिज्ञाएँ ब्रह्मांडीय न्याय का रूप धारण कर लेती हैं।"
     },
     {
       pageNumber: 6,
@@ -366,10 +381,13 @@ export const PART_5_STORY: StoryPart = {
       speaker: 'Draupadi’s Prayer of Total Surrender',
       speaker_te: 'ద్రౌపది అనన్య శరణాగతి ప్రార్థన',
       speaker_hi: 'द्रौपदी का अनन्य शरणागति आर्तनाद',
-      imageUrl: '/assets/wallpapers/draupadi.jpg',
+      imageUrl: '/assets/storybook/page_41_0_Image0.jpg',
       imageCaption: 'The endless mountain of celestial silk flowing from Sri Krishna’s grace, protecting Draupadi.',
       imageCaption_te: 'శ్రీకృష్ణుని కరుణతో అనంతంగా ప్రవహించిన అక్షయ వస్త్రాలు.',
-      imageCaption_hi: 'भगवान श्रीकृष्ण की कृपा से अखंड चीर-अवतार का दिव्य दृश्य।'
+      imageCaption_hi: 'भगवान श्रीकृष्ण की कृपा से अखंड चीर-अवतार का दिव्य दृश्य।',
+      moralLesson: "Selfless hospitality and devotion to feeding others are rewarded by inexhaustible divine abundance.",
+      moralLesson_te: "అతిథి సత్కారం మరియు ఆకలితో ఉన్నవారికి అన్నదానం చేయడం అక్షయమైన దైవానుగ్రహాన్ని ఇస్తుంది.",
+      moralLesson_hi: "सच्चे हृदय से दूसरों को भोजन कराना और सेवा करना अक्षय पुण्य और दैवीय कृपा दिलाता है।"
     },
     {
       pageNumber: 7,
@@ -403,10 +421,13 @@ export const PART_5_STORY: StoryPart = {
       speaker: 'Bhima’s Roar of Retribution',
       speaker_te: 'భీముని ప్రళయ శపథం',
       speaker_hi: 'भीमसेन का भीषण प्रतिशोध संकल्प',
-      imageUrl: '/assets/wallpapers/bhima.jpg',
+      imageUrl: '/assets/storybook/page_42_0_Image0.jpg',
       imageCaption: 'The enraged Bhima making his immortal vows of retribution before the assembled court.',
       imageCaption_te: 'సభలో భయంకర ప్రతీకార శపథాలు చేస్తున్న భీమసేనుడు.',
-      imageCaption_hi: 'भरी सभा में कुरुवंश के विनाश की प्रतिज्ञा लेते महाबली भीम।'
+      imageCaption_hi: 'भरी सभा में कुरुवंश के विनाश की प्रतिज्ञा लेते महाबली भीम।',
+      moralLesson: "A single leaf of devotion offered with pure love satisfies the hunger of the entire universe.",
+      moralLesson_te: "భక్తితో సమర్పించే ఒక చిన్న ఆకు అయినా పరమాత్ముని తృప్తిపరచి విశ్వశాంతిని కలిగిస్తుంది.",
+      moralLesson_hi: "प्रेम और भक्ति से अर्पित एक पत्ता भी समस्त ब्रह्मांड और भगवान को तृप्त करने की शक्ति रखता है।"
     },
     {
       pageNumber: 8,
@@ -440,10 +461,13 @@ export const PART_5_STORY: StoryPart = {
       speaker: 'Arjuna’s vow as the Pandavas departed',
       speaker_te: 'నిష్క్రమిస్తూ అర్జునుని హెచ్చరిక',
       speaker_hi: 'हस्तिनापुर छोड़ते हुए अर्जुन की अंतिम चेतावनी',
-      imageUrl: '/assets/wallpapers/draupadi.jpg',
+      imageUrl: '/assets/storybook/page_36_0_Image0.jpg',
       imageCaption: 'The five Pandavas and Draupadi clad in ascetic garments departing into the dense wilderness.',
       imageCaption_te: 'నారచీరలు ధరించి దట్టమైన అరణ్యంలోకి బయలుదేరిన పాండవులు, ద్రౌపది.',
-      imageCaption_hi: 'मृगचर्म धारण कर वनवास हेतु हस्तिनापुर से प्रस्थान करते पांडव और द्रौपदी।'
+      imageCaption_hi: 'मृगचर्म धारण कर वनवास हेतु हस्तिनापुर से प्रस्थान करते पांडव और द्रौपदी।',
+      moralLesson: "Wisdom, truthfulness, and impartial justice revive hope even from the darkest jaws of death.",
+      moralLesson_te: "సత్యనిష్ట, నిష్పాక్షికత మరియు ధర్మపాలన మృత్యువు ఒడి నుండి కూడా పునర్జన్మను ప్రసాదిస్తాయి.",
+      moralLesson_hi: "सत्य, निष्पक्षता और धर्म के प्रश्नों का सही उत्तर ही मृत्यु के मुख से भी जीवन लौटा लाता है।"
     }
   ],
 

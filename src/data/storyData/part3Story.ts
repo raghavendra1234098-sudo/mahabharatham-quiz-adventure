@@ -185,7 +185,10 @@ export const PART_3_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'The Pandavas taking leave of the elders in Hastinapur before setting off for Varnavata.',
       imageCaption_te: 'వారణావతానికి బయలుదేరుతూ పెద్దల ఆశీర్వాదం తీసుకుంటున్న పాండవులు.',
-      imageCaption_hi: 'वारणावत प्रस्थान से पूर्व हस्तिनापुर के बड़ों का आशीर्वाद लेते पांडव।'
+      imageCaption_hi: 'वारणावत प्रस्थान से पूर्व हस्तिनापुर के बड़ों का आशीर्वाद लेते पांडव।',
+      moralLesson: "Beware of flattery and sudden luxury offered by envious rivals; vigilance protects life.",
+      moralLesson_te: "అసూయాపరులు చూపించే ఆడంబరాలు, ప్రశంసల వెనుక దాగి ఉండే ప్రమాదాలను ముందుగానే గ్రహించాలి.",
+      moralLesson_hi: "ईर्ष्यालु शत्रुओं के मीठे वचनों और अचानक दिए गए उपहारों के पीछे छिपे संकट को पहचानना ही बुद्धिमानी है।"
     },
     {
       pageNumber: 2,
@@ -219,10 +222,13 @@ export const PART_3_STORY: StoryPart = {
       speaker: 'Vidura’s Cryptic Proverb to Yudhishthira',
       speaker_te: 'ధర్మరాజుతో విదురుని రహస్య సంకేతం',
       speaker_hi: 'विदुर द्वारा युधिष्ठिर को गुप्त चेतावनी',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'The mining expert excavating the escape tunnel beneath the chamber of the Pandavas.',
       imageCaption_te: 'పాండవుల ప్రాణాలను కాపాడే రహస్య నేలమాళిగను తవ్వుతున్న నిపుణుడు.',
-      imageCaption_hi: 'महल के नीचे चुपचाप जीवनदायिनी सुरंग का निर्माण करते खनिक।'
+      imageCaption_hi: 'महल के नीचे चुपचाप जीवनदायिनी सुरंग का निर्माण करते खनिक।',
+      moralLesson: "True allies communicate through wisdom; alert minds perceive salvation in coded guidance.",
+      moralLesson_te: "జ్ఞానులు ఇచ్చే సూక్ష్మ సంకేతాలను గ్రహించగలిగితే ఎంతటి మహా ప్రమాదం నుండైనా బయటపడవచ్చు.",
+      moralLesson_hi: "संकट में सच्चे मित्रों के गुप्त संकेत ही प्राणों की रक्षा का आधार बनते हैं।"
     },
     {
       pageNumber: 3,
@@ -259,7 +265,10 @@ export const PART_3_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'Mighty Bhima carrying Kunti and his younger brothers through the dark Primeval forest.',
       imageCaption_te: 'దట్టమైన చీకటి అడవిలో కుంతీదేవిని, తమ్ముళ్ళను మోస్తున్న మహాబలశాలి భీమసేనుడు.',
-      imageCaption_hi: 'घने अंधकारमय वन में पूरे परिवार को अपने विशाल कंधों पर उठाए महाबली भीम।'
+      imageCaption_hi: 'घने अंधकारमय वन में पूरे परिवार को अपने विशाल कंधों पर उठाए महाबली भीम।',
+      moralLesson: "Courage, family unity, and swift presence of mind can navigate through the darkest fires of treachery.",
+      moralLesson_te: "ధైర్యం, కుటుంబ ఐక్యత మరియు సమయస్ఫూర్తి కుట్రల అగ్ని గుండం నుండి కూడా రక్షిస్తాయి.",
+      moralLesson_hi: "साहस, पारिवारिक एकता और प्रत्युत्पन्नमति ही विश्वासघात की आग से सकुशल बाहर निकालते हैं।"
     },
     {
       pageNumber: 4,
@@ -293,10 +302,13 @@ export const PART_3_STORY: StoryPart = {
       speaker: 'Bhima to Mother Kunti',
       speaker_te: 'కుంతీదేవితో భీముడు',
       speaker_hi: 'माता कुंती से भीम के गर्वीले शब्द',
-      imageUrl: '/assets/wallpapers/bhima.jpg',
+      imageUrl: '/assets/storybook/page_20_0_Image0.jpg',
       imageCaption: 'Bhima laughing in triumph after liberating the town of Ekachakra from Bakasura.',
       imageCaption_te: 'బకాసురుడిని సంహరించి ఏకచక్రపుర ప్రజలను కాపాడిన భీమసేనుడు.',
-      imageCaption_hi: 'बकासुर का वध कर एकचक्रा वासियों को भयमुक्त करते महाबली भीम।'
+      imageCaption_hi: 'बकासुर का वध कर एकचक्रा वासियों को भयमुक्त करते महाबली भीम।',
+      moralLesson: "Noble character sees past external monstrous forms to embrace true virtue and goodness.",
+      moralLesson_te: "బాహ్య రూపం కంటే అంతఃసౌందర్యం, ధర్మ గుణాలే మానవ సంబంధాలకు నిజమైన మూలం.",
+      moralLesson_hi: "राक्षसी कुल में जन्म लेने पर भी यदि विचार सात्विक हों, तो वह पूजनीय बन जाता है।"
     },
     {
       pageNumber: 5,
@@ -330,10 +342,13 @@ export const PART_3_STORY: StoryPart = {
       speaker: 'Prince Dhrishtadyumna’s Proclamation',
       speaker_te: 'దృష్టద్యుమ్నుని ప్రకటన',
       speaker_hi: 'धृष्टद्युम्न की राजसभा में घोषणा',
-      imageUrl: '/assets/wallpapers/draupadi.jpg',
+      imageUrl: '/assets/storybook/page_22_0_Image0.jpg',
       imageCaption: 'Princess Draupadi holding the golden marriage garland, observing the assembly of kings.',
       imageCaption_te: 'స్వయంవర వేదికపై వరమాల ధరించి నిలబడిన పాంచాల రాకుమారి ద్రౌపది.',
-      imageCaption_hi: 'वरमाला हाथ में लिए स्वयंवर सभा में उपस्थित रूपवती राजकुमारी द्रौपदी।'
+      imageCaption_hi: 'वरमाला हाथ में लिए स्वयंवर सभा में उपस्थित रूपवती राजकुमारी द्रौपदी।',
+      moralLesson: "Great physical power achieves its sacred purpose only when used to protect the helpless and weak.",
+      moralLesson_te: "అపారమైన శారీరక బలం అభాగ్యులను, బలహీనులను రక్షించడానికి ఉపయోగపడినప్పుడే సార్థకమవుతుంది.",
+      moralLesson_hi: "बाहुबल की सार्थकता तभी है जब उसका उपयोग निर्बल और असहाय लोगों की रक्षा के लिए हो।"
     },
     {
       pageNumber: 6,
@@ -367,10 +382,13 @@ export const PART_3_STORY: StoryPart = {
       speaker: 'Arjuna walking to the bow',
       speaker_te: 'వేదికపైకి వెళ్తూ అర్జునుడు',
       speaker_hi: 'धनुष की ओर बढ़ते हुए अर्जुन के विचार',
-      imageUrl: '/assets/wallpapers/arjuna.jpg',
+      imageUrl: '/assets/storybook/page_28_0_Image0.jpg',
       imageCaption: 'Disguised Arjuna lifting the gigantic bow with effortless, divine grace.',
       imageCaption_te: 'సునాయాసంగా భారీ ధనుస్సును పైకెత్తుతున్న బ్రాహ్మణ వేషధారి అర్జునుడు.',
-      imageCaption_hi: 'लीलामात्र से विशाल धनुष को उठाकर प्रत्यंचा चढ़ाते तेजस्वी विप्र अर्जुन।'
+      imageCaption_hi: 'लीलामात्र से विशाल धनुष को उठाकर प्रत्यंचा चढ़ाते तेजस्वी विप्र अर्जुन।',
+      moralLesson: "Patience during the trials of exile prepares righteous souls for their destined glory.",
+      moralLesson_te: "కష్ట కాలంలో ఓపికతో నిలబడే వారికే భవిష్యత్తులో అఖండ విజయం మరియు వైభవం లభిస్తాయి.",
+      moralLesson_hi: "कठिनाइयों में संयम रखने वाले धर्मात्मा ही समय आने पर सर्वोच्च सम्मान प्राप्त करते हैं।"
     },
     {
       pageNumber: 7,
@@ -404,10 +422,13 @@ export const PART_3_STORY: StoryPart = {
       speaker: 'Dhrishtadyumna to the cheering crowd',
       speaker_te: 'ప్రజలతో దృష్టద్యుమ్నుడు',
       speaker_hi: 'धृष्टद्युम्न का हर्षोल्लास',
-      imageUrl: '/assets/wallpapers/arjuna.jpg',
+      imageUrl: '/assets/storybook/page_29_0_Image0.jpg',
       imageCaption: 'The golden arrow piercing the eye of the revolving fish as flowers rain upon the arena.',
       imageCaption_te: 'మత్స్యయంత్రం కంటిని ఛేదించిన బాణం, ద్రౌపది వరణం.',
-      imageCaption_hi: 'मत्स्य-यंत्र भेदकर विजय प्राप्त करने का अलौकिक दृश्य।'
+      imageCaption_hi: 'मत्स्य-यंत्र भेदकर विजय प्राप्त करने का अलौकिक दृश्य।',
+      moralLesson: "True archery and victory demand inner stillness; serene focus hits targets that brute force misses.",
+      moralLesson_te: "నిజమైన నైపుణ్యానికి అంతశ్శాంతి అవసరం; కోపం, అహంకారం సాధించలేనిదాన్ని ప్రశాంతమైన గురి సాధిస్తుంది.",
+      moralLesson_hi: "क्रोध और उतावलेपन से दूर रहकर एकाग्रचित्त होने पर ही जीवन के कठिन से कठिन लक्ष्य साधे जा सकते हैं।"
     },
     {
       pageNumber: 8,
@@ -441,10 +462,13 @@ export const PART_3_STORY: StoryPart = {
       speaker: 'Mother Kunti’s unalterable command',
       speaker_te: 'కుంతీదేవి అప్రయత్న ఆదేశం',
       speaker_hi: 'माता कुंती का अटल वचन',
-      imageUrl: '/assets/wallpapers/draupadi.jpg',
+      imageUrl: '/assets/storybook/page_30_0_Image0.jpg',
       imageCaption: 'The five Pandavas united with Draupadi under the blessings of Mother Kunti and Lord Krishna.',
       imageCaption_te: 'తల్లి కుంతి, శ్రీకృష్ణుని ఆశీస్సులతో ద్రౌపదితో ఏకమైన పంచ పాండవులు.',
-      imageCaption_hi: 'माता कुंती और भगवान श्रीकृष्ण के आशीर्वाद से द्रौपदी और पंच पांडवों का पावन मिलन।'
+      imageCaption_hi: 'माता कुंती और भगवान श्रीकृष्ण के आशीर्वाद से द्रौपदी और पंच पांडवों का पावन मिलन।',
+      moralLesson: "Reverence for a mother’s word and unbreakable brotherhood forge a bond that destiny itself cannot shatter.",
+      moralLesson_te: "మాతృవాక్య పరిపాలన మరియు సోదర ఐక్యత విధి రాసే తలరాతనైనా విజయంగా మార్చగలవు.",
+      moralLesson_hi: "मातृ-आज्ञा का सम्मान और भाइयों का अटूट प्रेम ही वह ढाल है जिसे काल भी नहीं भेद सकता।"
     }
   ],
 

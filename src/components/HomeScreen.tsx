@@ -10,8 +10,8 @@ export const HomeScreen: React.FC = () => {
   // Resume at current highest unlocked level
   const handleStartOrContinue = () => {
     // If user hasn't played story part 1 yet, open story reader first
-    const partNum = Math.ceil(progress.currentLevel / 5);
-    const completedInPart = progress.completedLevels.filter(l => Math.ceil(l / 5) === partNum);
+    const partNum = Math.ceil(progress.currentLevel / 100);
+    const completedInPart = progress.completedLevels.filter(l => Math.ceil(l / 100) === partNum);
     if (completedInPart.length === 0) {
       openStoryPart(partNum);
     } else {
@@ -88,7 +88,7 @@ export const HomeScreen: React.FC = () => {
             </span>
             <div className="text-lg sm:text-xl font-black text-amber-100 font-royal drop-shadow-sm flex items-baseline">
               <span>{progress.currentLevel}</span>
-              <span className="text-xs text-amber-400/60 ml-0.5">/100</span>
+              <span className="text-xs text-amber-400/60 ml-0.5">/1000</span>
             </div>
           </div>
 
@@ -141,7 +141,7 @@ export const HomeScreen: React.FC = () => {
                   <span className="text-sm font-bold font-royal text-amber-100 group-hover:text-amber-300 transition-colors block leading-tight">
                     Story Map
                   </span>
-                  <span className="text-[10px] text-amber-400/60 font-serif">50 Levels</span>
+                  <span className="text-[10px] text-amber-400/60 font-serif">1,000 Levels</span>
                 </div>
               </div>
               <ChevronRight className="w-4 h-4 text-amber-400/60 group-hover:translate-x-1 transition-transform" />

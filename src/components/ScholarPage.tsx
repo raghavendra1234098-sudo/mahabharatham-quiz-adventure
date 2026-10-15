@@ -21,12 +21,12 @@ import { audioService } from '../services/audioService';
 export const ScholarPage: React.FC = () => {
   const { setScreen, progress, saveScholarCertificate, openLevel } = useGame();
 
-  // Strict Unlock Condition: All 100 levels must be completed (Requirement 1 & 7)
-  const isUnlocked = progress.completedLevels.length >= 100;
+  // Strict Unlock Condition: All 1000 levels must be completed
+  const isUnlocked = progress.completedLevels.length >= 1000;
 
   // Ceremony viewed tracker
   const [showCeremony, setShowCeremony] = useState<boolean>(() => {
-    if (progress.completedLevels.length < 100) return false;
+    if (progress.completedLevels.length < 1000) return false;
     return !localStorage.getItem('mahabharata_scholar_ceremony_viewed');
   });
 

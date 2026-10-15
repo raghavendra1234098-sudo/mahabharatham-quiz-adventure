@@ -135,7 +135,7 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const openLevel = (levelNum: number) => {
     audioService.playClick();
     setSelectedLevel(levelNum);
-    setSelectedPart(Math.ceil(levelNum / 10));
+    setSelectedPart(Math.ceil(levelNum / 100));
     setScreen('quiz');
   };
 
@@ -169,12 +169,12 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const completeLevel = (levelNum: number, score: number, stars: number, earnedXP: number) => {
     setProgress(prev => {
       const completed = Array.from(new Set([...prev.completedLevels, levelNum]));
-      const nextLevel = Math.max(prev.currentLevel, levelNum < 100 ? levelNum + 1 : 100);
-      const nextPart = Math.ceil(nextLevel / 10);
+      const nextLevel = Math.max(prev.currentLevel, levelNum < 1000 ? levelNum + 1 : 1000);
+      const nextPart = Math.ceil(nextLevel / 100);
 
-      // Check if 10 levels of a story part are completed
-      const partNumber = Math.ceil(levelNum / 10);
-      const partLevels = Array.from({ length: 10 }, (_, i) => (partNumber - 1) * 10 + i + 1);
+      // Check if 100 levels of a story part are completed
+      const partNumber = Math.ceil(levelNum / 100);
+      const partLevels = Array.from({ length: 100 }, (_, i) => (partNumber - 1) * 100 + i + 1);
       const allPartLevelsDone = partLevels.every(l => completed.includes(l));
 
       const newUnlockedChars = [...prev.unlockedCharacters];

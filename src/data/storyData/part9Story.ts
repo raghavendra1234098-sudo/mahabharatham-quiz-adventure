@@ -160,10 +160,13 @@ export const PART_9_STORY: StoryPart = {
       speaker: 'Guru Drona planning the Chakravyuha',
       speaker_te: 'చక్రవ్యూహం రచిస్తూ ద్రోణుడు',
       speaker_hi: 'द्रोणाचार्य की चक्रव्यूह योजना',
-      imageUrl: '/assets/wallpapers/dronacharya.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'Guru Drona directing the concentric circular formations of the deadly Chakravyuha.',
       imageCaption_te: 'చక్రవ్యూహ సైనిక నిర్మాణాన్ని పర్యవేక్షిస్తున్న గురు ద్రోణాచార్యుడు.',
-      imageCaption_hi: 'समरभूमि में भयानक चक्रव्यूह की व्यूहरचना करते गुरु द्रोणाचार्य।'
+      imageCaption_hi: 'समरभूमि में भयानक चक्रव्यूह की व्यूहरचना करते गुरु द्रोणाचार्य।',
+      moralLesson: "No hidden depth of water can shield a soul from the karmic consequences of its actions.",
+      moralLesson_te: "చేసిన పాపాల నుండి తప్పించుకోవడానికి ఏ జలాలూ, ఏ ఆశ్రయాలూ రక్షణ ఇవ్వలేవు.",
+      moralLesson_hi: "कर्मों के फल से बचने के लिए पाताल या जल का कोई भी कोना आश्रय नहीं दे सकता।"
     },
     {
       pageNumber: 2,
@@ -197,10 +200,13 @@ export const PART_9_STORY: StoryPart = {
       speaker: 'Young Abhimanyu charging the Chakravyuha',
       speaker_te: 'వ్యూహంలోకి దూకుతూ అభిమన్యుడు',
       speaker_hi: 'चक्रव्यूह में प्रवेश करते अभिमन्यु के उद्गार',
-      imageUrl: '/assets/wallpapers/abhimanyu.jpg',
+      imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'Young Prince Abhimanyu firing arrows from his chariot as he breaches the outer ring of the Chakravyuha.',
       imageCaption_te: 'చక్రవ్యూహాన్ని ఛేదిస్తూ బాణాలు వేస్తున్న యువ అభిమన్యుడు.',
-      imageCaption_hi: 'चक्रव्यूह का द्वार तोड़कर भीतर प्रविष्ट होते तेजस्वी अभिमन्यु।'
+      imageCaption_hi: 'चक्रव्यूह का द्वार तोड़कर भीतर प्रविष्ट होते तेजस्वी अभिमन्यु।',
+      moralLesson: "Physical prowess endures to the end, but without virtue, colossal strength cannot secure victory.",
+      moralLesson_te: "శారీరక బలం ఎంత ఉన్నా, నీతి లేకపోతే అది వినాశనానికే దారితీస్తుంది.",
+      moralLesson_hi: "भीमकाय बल भी तब व्यर्थ हो जाता है जब उसके पीछे धर्म और सद्बुद्धि का आधार न हो।"
     },
     {
       pageNumber: 3,
@@ -234,10 +240,13 @@ export const PART_9_STORY: StoryPart = {
       speaker: 'Jayadratha barring the Pandavas',
       speaker_te: 'పాండవులను అడ్డుకుంటూ జయద్రథుడు',
       speaker_hi: 'पांडवों को रोकते हुए जयद्रथ का अट्टहास',
-      imageUrl: '/assets/wallpapers/bhishma.jpg',
+      imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'Jayadratha with raised sword blocking the entry breach as Bhima’s chariot rages in vain.',
       imageCaption_te: 'వ్యూహ ప్రవేశాన్ని అడ్డుకుంటున్న జయద్రథుడు; నిస్సహాయంగా చూస్తున్న భీముడు.',
-      imageCaption_hi: 'चक्रव्यूह के द्वार पर पांडवों को रोकते सिंधु नरेश जयद्रथ।'
+      imageCaption_hi: 'चक्रव्यूह के द्वार पर पांडवों को रोकते सिंधु नरेश जयद्रथ।',
+      moralLesson: "Every vow born of righteous anguish finds its inexorable fulfillment in the fullness of time.",
+      moralLesson_te: "ధర్మవేదనతో చేసిన శపథాలు సమయం వచ్చినప్పుడు తప్పక నెరవేరుతాయి.",
+      moralLesson_hi: "धर्म और आत्मसम्मान की रक्षा के लिए ली गई प्रतिज्ञाएँ समय आने पर अवश्य फलित होती हैं।"
     },
     {
       pageNumber: 4,
@@ -271,10 +280,13 @@ export const PART_9_STORY: StoryPart = {
       speaker: 'Abhimanyu’s final words defying the six warriors',
       speaker_te: 'ఆరుగురు వీరులను ఛీత్కరిస్తున్న అభిమన్యుడు',
       speaker_hi: 'अभिमन्यु की अंतिम ललकार',
-      imageUrl: '/assets/wallpapers/abhimanyu.jpg',
+      imageUrl: '/assets/wallpapers/arjuna.jpg',
       imageCaption: 'Prince Abhimanyu wielding a broken wooden chariot wheel as a shield against encircling Maharathas.',
       imageCaption_te: 'విరిగిన రథచక్రాన్ని రక్షణ కవచంగా చేసుకుని పోరాడుతున్న అభిమన్యుడు.',
-      imageCaption_hi: 'टूटे रथ का पहिया थामे छह महारथियों से अकेले लोहा लेते अमर बलिदानी अभिमन्यु।'
+      imageCaption_hi: 'टूटे रथ का पहिया थामे छह महारथियों से अकेले लोहा लेते अमर बलिदानी अभिमन्यु।',
+      moralLesson: "Blind rage turns grief into monstrous cruelty; nocturnal slaughter of the sleeping is pure darkness.",
+      moralLesson_te: "విచక్షణ లేని పగ మనిషిని రాక్షసుడిగా మారుస్తుంది; నిద్రిస్తున్న వారిని చంపడం ఘోర పాపం.",
+      moralLesson_hi: "अंधी प्रतिशोध की ज्वाला मनुष्य को पिशाच बना देती है; सोते हुओं पर वार करना महापाप है।"
     },
     {
       pageNumber: 5,
@@ -311,7 +323,10 @@ export const PART_9_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/arjuna.jpg',
       imageCaption: 'Arjuna loosing the fatal arrow at Jayadratha under the restored rays of the setting sun.',
       imageCaption_te: 'సూర్యాస్తమయ వేళ జయద్రథునిపై బాణాన్ని సంధిస్తున్న అర్జునుడు.',
-      imageCaption_hi: 'अस्त होते सूर्य के समक्ष जयद्रथ का वध करते गांडीवधारी अर्जुन।'
+      imageCaption_hi: 'अस्त होते सूर्य के समक्ष जयद्रथ का वध करते गांडीवधारी अर्जुन।',
+      moralLesson: "Attacking innocent unborn life brings an inescapable eternal curse that no glory can cleanse.",
+      moralLesson_te: "నిర్దోషులైన పసికందులను సంహరించాలని చూడటం యుగయుగాల పాటు శాపాన్ని మిగులుస్తుంది.",
+      moralLesson_hi: "गर्भस्थ निर्दोष शिशु पर घातक अस्त्र चलाना ऐसा अधर्म है जिसका दंड युगों तक भुगतना पड़ता है।"
     },
     {
       pageNumber: 6,
@@ -348,7 +363,10 @@ export const PART_9_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'Ghatotkacha in his mountain-like form crashing upon the Kaurava army as the fiery dart strikes him.',
       imageCaption_te: 'వాసవి శక్తి తగిలి కౌరవ సైన్యంపై కూలుతున్న రాక్షస వీరుడు ఘటోత్కచుడు.',
-      imageCaption_hi: 'वासव-शक्ति से विद्ध होकर कौरव सेना पर गिरते महाबली घटोत्कच।'
+      imageCaption_hi: 'वासव-शक्ति से विद्ध होकर कौरव सेना पर गिरते महाबली घटोत्कच।',
+      moralLesson: "Wrath destroys only senseless iron and our own peace; forgiveness alone heals the wounded soul.",
+      moralLesson_te: "ఆవేశం మనశ్శాంతిని మాత్రమే నాశనం చేస్తుంది; క్షమాగుణమే గాయపడిన హృదయాలను మాన్పుతుంది.",
+      moralLesson_hi: "क्रोध केवल निर्जीव लोहे को चूर कर सकता है; आत्मा की शांति केवल क्षमा और विवेक से मिलती है।"
     },
     {
       pageNumber: 7,
@@ -382,10 +400,13 @@ export const PART_9_STORY: StoryPart = {
       speaker: 'Yudhishthira’s historic half-truth',
       speaker_te: 'ధర్మరాజు పలికిన అర్ధసత్యం',
       speaker_hi: 'युधिष्ठिर का अर्द्धसत्य',
-      imageUrl: '/assets/wallpapers/dronacharya.jpg',
+      imageUrl: '/assets/storybook/page_57_0_Image0.jpg',
       imageCaption: 'Guru Drona seated in yogic trance on his chariot as weapons fall from his hands.',
       imageCaption_te: 'ఆయుధాలను వదిలేసి రథంపై యోగసమాధిలో కూర్చున్న గురు ద్రోణాచార్యుడు.',
-      imageCaption_hi: 'समाधि में लीन गुरु द्रोणाचार्य और शस्त्र त्यागने का कारुणिक दृश्य।'
+      imageCaption_hi: 'समाधि में लीन गुरु द्रोणाचार्य और शस्त्र त्यागने का कारुणिक दृश्य।',
+      moralLesson: "Even the Avatar of God honours the cosmic laws of karma and the profound sorrow of a mother.",
+      moralLesson_te: "భగవంతుడు సైతం కర్మ నియమాలను, కన్నతల్లి శోకాన్ని గౌరవించి నమ్రతతో స్వీకరిస్తాడు.",
+      moralLesson_hi: "भगवान भी कर्म के शाश्वत नियमों और एक शोकाकुल माता के शाप का सम्मान करते हैं।"
     },
     {
       pageNumber: 8,
@@ -420,10 +441,13 @@ export const PART_9_STORY: StoryPart = {
       speaker: 'Sri Krishna indicting Karna before his fall',
       speaker_te: 'కర్ణుని నిలదీస్తున్న శ్రీకృష్ణుడు',
       speaker_hi: 'कर्ण के धर्म-दुहाई पर श्रीकृष्ण का प्रत्युत्तर',
-      imageUrl: '/assets/wallpapers/karna.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'The tragic fallen warrior Karna on the sunset sands of Kurukshetra as a golden ray returns to the Sun.',
       imageCaption_te: 'కురుక్షేత్రంలో అస్తమించిన దానవీర కర్ణుడు; సూర్యమండలంలో ఐక్యమైన దివ్య తేజస్సు.',
-      imageCaption_hi: 'रणभूमि में कर्ण का वीरगति पाना और उनकी आत्मा का सूर्य में विलीन होना।'
+      imageCaption_hi: 'रणभूमि में कर्ण का वीरगति पाना और उनकी आत्मा का सूर्य में विलीन होना।',
+      moralLesson: "Secrets kept out of societal fear inflict devastating sorrow; truth must be embraced with courage.",
+      moralLesson_te: "భయంతో దాచిపెట్టిన సత్యాలు తీవ్ర వేదనకు కారణమవుతాయి; సత్యాన్ని ధైర్యంగా అంగీకరించాలి.",
+      moralLesson_hi: "भयवश छिपाए गए सत्य अंत में सबसे गहरा घाव देते हैं; सत्य को समय पर प्रकट करना ही श्रेयस्कर है।"
     }
   ],
 

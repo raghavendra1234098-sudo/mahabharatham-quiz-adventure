@@ -175,10 +175,13 @@ export const PART_4_STORY: StoryPart = {
       speaker: 'Bhishma’s counsel to Dhritarashtra',
       speaker_te: 'ధృతరాష్ట్రునితో భీష్ముడు',
       speaker_hi: 'भीष्म का धृतराष्ट्र को वचन',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/storybook/page_26_0_Image0.jpg',
       imageCaption: 'The Pandavas surveying the barren plains of Khandavaprastha alongside Lord Krishna.',
       imageCaption_te: 'శ్రీకృష్ణునితో కలిసి ఖాండవప్రస్థ భూమిని పరిశీలిస్తున్న పాండవులు.',
-      imageCaption_hi: 'श्रीकृष्ण के साथ खांडवप्रस्थ की बंजर भूमि पर संकल्प लेते पंच पांडव।'
+      imageCaption_hi: 'श्रीकृष्ण के साथ खांडवप्रस्थ की बंजर भूमि पर संकल्प लेते पंच पांडव।',
+      moralLesson: "Deceit, even for divine astras, brings failure at the hour of supreme need; truth alone endures.",
+      moralLesson_te: "దివ్య విద్యల కోసమైనా సరే మోసాన్ని ఆశ్రయిస్తే, కీలక సమయంలో ఆ విద్య నిష్ఫలమవుతుంది.",
+      moralLesson_hi: "ज्ञान प्राप्ति में किया गया छल अंत समय में सब कुछ भुला देता है; सत्य ही शाश्वत संबल है।"
     },
     {
       pageNumber: 2,
@@ -212,10 +215,13 @@ export const PART_4_STORY: StoryPart = {
       speaker: 'Lord Agni presenting Gandiva to Arjuna',
       speaker_te: 'అర్జునునికి గాండీవాన్ని ఇస్తూ అగ్నిదేవుడు',
       speaker_hi: 'अग्निदेव द्वारा अर्जुन को गांडीव समर्पण',
-      imageUrl: '/assets/wallpapers/arjuna.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'Arjuna standing resplendent on his chariot, firing the golden Gandiva into the night sky.',
       imageCaption_te: 'హనుమధ్వజ రథంపై గాండీవాన్ని ధరించి మెరుస్తున్న అర్జునుడు.',
-      imageCaption_hi: 'कपिध्वज रथ पर सवार होकर गांडीव की टंकार करते अद्वितीय धनुर्धर अर्जुन।'
+      imageCaption_hi: 'कपिध्वज रथ पर सवार होकर गांडीव की टंकार करते अद्वितीय धनुर्धर अर्जुन।',
+      moralLesson: "Righteous perseverance and industrious vision can transform a barren wasteland into a golden empire.",
+      moralLesson_te: "ధర్మనిష్ట మరియు నిరంతర శ్రమతో ఎడారి లాంటి భూమినైనా స్వర్గతుల్యమైన రాజ్యంగా మార్చవచ్చు.",
+      moralLesson_hi: "परिश्रम और धर्मपरायणता से बंजर भूमि को भी स्वर्ग जैसी वैभवशाली नगरी में बदला जा सकता है।"
     },
     {
       pageNumber: 3,
@@ -249,10 +255,13 @@ export const PART_4_STORY: StoryPart = {
       speaker: 'Maya Danava presenting the palace',
       speaker_te: 'మాయాసభను అప్పగిస్తూ మయదానవుడు',
       speaker_hi: 'मय दानव द्वारा सभा का लोकार्पण',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/wallpapers/arjuna.jpg',
       imageCaption: 'The glowing pillars and mirror-like courtyards of the legendary Maya Sabha in Indraprastha.',
       imageCaption_te: 'ఇంద్రప్రస్థంలో వెలిగిపోతున్న అద్భుత మాయాసభ దృశ్యం.',
-      imageCaption_hi: 'इंद्रप्रस्थ में निर्मित चमत्कारी और दिव्य मयसभा का अलौकिक दृश्य।'
+      imageCaption_hi: 'इंद्रप्रस्थ में निर्मित चमत्कारी और दिव्य मयसभा का अलौकिक दृश्य।',
+      moralLesson: "Divine weapons and celestial favour belong to those who respect cosmic order and natural elements.",
+      moralLesson_te: "ప్రకృతి ధర్మాన్ని గౌరవించి లోక కళ్యాణానికి పాటుపడేవారికే దైవిక శక్తులు లభిస్తాయి.",
+      moralLesson_hi: "दैवीय शक्तियाँ और अस्त्र उन्हीं को सिद्ध होते हैं जो उनका उपयोग लोक-कल्याण के लिए करते हैं।"
     },
     {
       pageNumber: 4,
@@ -286,10 +295,13 @@ export const PART_4_STORY: StoryPart = {
       speaker: 'Sri Krishna’s silent gesture to Bhima',
       speaker_te: 'శ్రీకృష్ణుని గడ్డిపరక సంకేతం',
       speaker_hi: 'श्रीकृष्ण का मल्ल-युद्ध में गुप्त संकेत',
-      imageUrl: '/assets/wallpapers/bhima.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'Mighty Bhima triumphing over Jarasandha in the wrestling arena of Magadha.',
       imageCaption_te: 'మగధ మల్లరంగంలో జరాసంధుడిని చీల్చి సంహరించిన భీమసేనుడు.',
-      imageCaption_hi: 'मगध के अखाड़े में जरासंध का अंत करते महाबली भीमसेन।'
+      imageCaption_hi: 'मगध के अखाड़े में जरासंध का अंत करते महाबली भीमसेन।',
+      moralLesson: "Creativity and divine architecture reflect the inner harmony of a kingdom ruled by justice.",
+      moralLesson_te: "ధర్మబద్ధమైన పాలనలోనే కళలు, అద్భుత నిర్మాణాలు మరియు ప్రజా సౌభాగ్యం వర్ధిల్లుతాయి.",
+      moralLesson_hi: "न्यायप्रिय शासन में ही कला, वैभव और प्रजा का सर्वांगीण विकास संभव होता है।"
     },
     {
       pageNumber: 5,
@@ -323,10 +335,13 @@ export const PART_4_STORY: StoryPart = {
       speaker: 'Bhishma Pitamaha in the Rajasuya Assembly',
       speaker_te: 'యాగసభలో భీష్ముని ప్రకటన',
       speaker_hi: 'राजसूय सभा में भीष्म पितामह का निर्णय',
-      imageUrl: '/assets/wallpapers/krishna.jpg',
+      imageUrl: '/assets/wallpapers/bhima.jpg',
       imageCaption: 'Emperor Yudhishthira washing the lotus feet of Sri Krishna for the supreme Agrapuja.',
       imageCaption_te: 'శ్రీకృష్ణుని పాదాలను కడిగి అగ్రపూజను సమర్పిస్తున్న ధర్మరాజు.',
-      imageCaption_hi: 'परमात्मा श्रीकृष्ण के चरण पखारकर अग्रपूजा समर्पित करते सम्राट युधिष्ठिर।'
+      imageCaption_hi: 'परमात्मा श्रीकृष्ण के चरण पखारकर अग्रपूजा समर्पित करते सम्राट युधिष्ठिर।',
+      moralLesson: "Tyrants who terrorize mankind are doomed to fall when righteous leaders unite with divine counsel.",
+      moralLesson_te: "ప్రజలను హింసించే క్రూరుల పతనం తథ్యం; ధర్మపరుల సంకల్పం ముందు ఏ దుర్మార్గుడూ నిలవలేడు.",
+      moralLesson_hi: "अत्याचारी शासकों का अंत निश्चित है जब धर्म के रक्षक ईश्वर की प्रेरणा से संगठित होते हैं।"
     },
     {
       pageNumber: 6,
@@ -363,7 +378,10 @@ export const PART_4_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/krishna.jpg',
       imageCaption: 'The serene Lord Krishna observing the screaming Shishupala with cosmic patience.',
       imageCaption_te: 'కోపంతో ఊగిపోతున్న శిశుపాలుడిని చిరునవ్వుతో గమనిస్తున్న శ్రీకృష్ణుడు.',
-      imageCaption_hi: 'गरजते हुए शिशुपाल को परम शांति से देखते जगदीश्वर श्रीकृष्ण।'
+      imageCaption_hi: 'गरजते हुए शिशुपाल को परम शांति से देखते जगदीश्वर श्रीकृष्ण।',
+      moralLesson: "Humility in honouring the supreme Divine above all kings brings prosperity to an entire continent.",
+      moralLesson_te: "అన్నింటికంటే పరమాత్మునికే ప్రథమ పూజ చేయడం నాయకులకు శాశ్వత శాంతిని, కీర్తిని చేకూరుస్తుంది.",
+      moralLesson_hi: "सर्वशक्तिमान परमात्मा को सर्वोच्च सम्मान देना ही सम्राटों और राष्ट्रों के कल्याण का मार्ग है।"
     },
     {
       pageNumber: 7,
@@ -400,7 +418,10 @@ export const PART_4_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/krishna.jpg',
       imageCaption: 'The Sudarshana Chakra hovering in golden light above the assembly of kings.',
       imageCaption_te: 'సభలో వెలిగిపోతున్న సుదర్శన చక్రం మరియు నమస్కరిస్తున్న రాజులు.',
-      imageCaption_hi: 'दिव्य सुदर्शन चक्र का तेज और नतमस्तक होते समस्त राजा-महाराजा।'
+      imageCaption_hi: 'दिव्य सुदर्शन चक्र का तेज और नतमस्तक होते समस्त राजा-महाराजा।',
+      moralLesson: "Patience is the ornament of the mighty, but justice is swift when the hundredth insult crosses limits.",
+      moralLesson_te: "ఓర్పు గొప్ప గుణమే, కానీ హద్దులు దాటిన పాపానికి శిక్ష విధించడం తప్పనిసరి ధర్మం.",
+      moralLesson_hi: "धैर्य और क्षमा बलवान का आभूषण हैं, किंतु पाप का घड़ा भर जाने पर न्याय का चक्र रुकता नहीं।"
     },
     {
       pageNumber: 8,
@@ -434,10 +455,13 @@ export const PART_4_STORY: StoryPart = {
       speaker: 'Duryodhana’s parting curse',
       speaker_te: 'హస్తినాపురానికి వెళ్తూ దుర్యోధనుని శపథం',
       speaker_hi: 'हस्तिनापुर लौटते हुए दुर्योधन का भीषण संकल्प',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/wallpapers/draupadi.jpg',
       imageCaption: 'Duryodhana walking out of the Maya Sabha, burning with incurable vengeful malice.',
       imageCaption_te: 'మాయాసభ నుండి ప్రతీకార జ్వాలలతో నిష్క్రమిస్తున్న దుర్యోధనుడు.',
-      imageCaption_hi: 'अपमान और प्रतिशोध की ज्वाला में जलता हुआ मयसभा से निकलता दुर्योधन।'
+      imageCaption_hi: 'अपमान और प्रतिशोध की ज्वाला में जलता हुआ मयसभा से निकलता दुर्योधन।',
+      moralLesson: "Mockery and public humiliation wound the ego deeply, sparking flames of envy that consume empires.",
+      moralLesson_te: "ఇతరుల బలహీనతలను చూసి నవ్వడం, అవమానించడం శత్రుత్వాన్ని పెంచి సర్వనాశనానికి దారితీస్తుంది.",
+      moralLesson_hi: "किसी के फिसलने पर उपहास उड़ाना अहंकार है; यह ईर्ष्या की वह आग जलाता है जो वंश नष्ट कर देती है।"
     }
   ],
 

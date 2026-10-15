@@ -160,13 +160,17 @@ export interface FamilyTreeData {
 
 export interface IllustratedStoryPage {
   pageNumber: number;
+  chapterNumber?: number;
+  partTitle?: string;
+  partTitle_te?: string;
+  partTitle_hi?: string;
   title: string;
   title_te?: string;
   title_hi?: string;
-  sceneTag: string;
+  sceneTag?: string;
   sceneTag_te?: string;
   sceneTag_hi?: string;
-  hookLine: string;
+  hookLine?: string;
   hookLine_te?: string;
   hookLine_hi?: string;
   paragraphs: string[];
@@ -179,9 +183,12 @@ export interface IllustratedStoryPage {
   speaker_te?: string;
   speaker_hi?: string;
   imageUrl: string;
-  imageCaption: string;
+  imageCaption?: string;
   imageCaption_te?: string;
   imageCaption_hi?: string;
+  moralLesson?: string;
+  moralLesson_te?: string;
+  moralLesson_hi?: string;
 }
 
 export interface PartSummary {

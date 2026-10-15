@@ -5,6 +5,7 @@ import { CHARACTERS_DATA } from '../data/charactersData';
 
 export const StoryMap: React.FC = () => {
   const { setScreen, openLevel, openStoryPart, progress, storyParts } = useGame();
+  const [activeDecade, setActiveDecade] = React.useState<Record<number, number>>({});
 
   return (
     <div className="min-h-screen w-full relative bg-[#05070e] p-4 md:p-8 text-amber-50 overflow-hidden">
@@ -42,7 +43,7 @@ export const StoryMap: React.FC = () => {
               MAHABHARATHAM JOURNEY MAP
             </h1>
             <p className="text-xs text-amber-300/80 font-serif tracking-wide pt-0.5">
-              100 Progressive Levels Across 10 Epic Chapters • Adhyayas of Dharma
+              1,000 Progressive Levels Across 10 Epic Chapters • Adhyayas of Dharma
             </p>
           </div>
 
@@ -52,13 +53,13 @@ export const StoryMap: React.FC = () => {
               <span>Conquered</span>
             </div>
             <span className="text-sm md:text-base font-black text-amber-100 font-royal block">
-              {progress.completedLevels.length} <span className="text-xs text-amber-400/70">/ 100 Levels</span>
+              {progress.completedLevels.length} <span className="text-xs text-amber-400/70">/ 1000 Levels</span>
             </span>
             {/* Mini Progress Track */}
             <div className="w-28 h-1.5 rounded-full bg-[#1e2538] border border-amber-500/30 overflow-hidden mt-1 mx-auto md:ml-auto">
               <div
                 className="h-full bg-gradient-to-r from-amber-600 via-yellow-400 to-amber-500 transition-all duration-500"
-                style={{ width: `${(progress.completedLevels.length / 100) * 100}%` }}
+                style={{ width: `${(progress.completedLevels.length / 1000) * 100}%` }}
               />
             </div>
           </div>
@@ -67,11 +68,23 @@ export const StoryMap: React.FC = () => {
         {/* The 10 Story Parts Timeline with Golden Dharma Road */}
         <div className="relative space-y-10 before:absolute before:inset-0 before:left-6 md:before:left-1/2 before:-translate-x-1/2 before:w-2 md:before:w-2.5 before:rounded-full before:royal-dharma-road before:border before:border-amber-300/40">
           {storyParts.map((part) => {
-            const partLevels = Array.from({ length: 10 }, (_, i) => (part.partNumber - 1) * 10 + i + 1);
+            const partStart = (part.partNumber - 1) * 100 + 1;
+            const partEnd = part.partNumber * 100;
+            const partLevels = Array.from({ length: 100 }, (_, i) => partStart + i);
             const isPartUnlocked = progress.currentStoryPart >= part.partNumber;
             const isPartCompleted = partLevels.every(l => progress.completedLevels.includes(l));
             const charReward = CHARACTERS_DATA.find(c => c.storyPart === part.partNumber);
             const isCharUnlocked = charReward && progress.unlockedCharacters.includes(charReward.id);
+
+            // Determine default decade for this part (0 for 1-10, 1 for 11-20, ... 9 for 91-100, -1 for All)
+            const currentDecadeIndex = Math.min(
+              9,
+              Math.max(0, Math.floor((Math.max(partStart, Math.min(partEnd, progress.currentLevel)) - partStart) / 10))
+            );
+            const activeDec = activeDecade[part.partNumber] !== undefined ? activeDecade[part.partNumber] : currentDecadeIndex;
+            const displayedLevels = activeDec === -1
+              ? partLevels
+              : partLevels.slice(activeDec * 10, activeDec * 10 + 10);
 
             return (
               <div
@@ -143,14 +156,53 @@ export const StoryMap: React.FC = () => {
                       "{part.summary}"
                     </p>
 
-                    {/* 10 Level Nodes for this Story Part */}
-                    <div className="space-y-2 pt-3 border-t border-[#a67c2e]/30">
-                      <span className="text-[11px] font-royal font-bold text-amber-400/90 uppercase tracking-wider block">
-                        Levels {partLevels[0]} – {partLevels[partLevels.length - 1]}
-                      </span>
+                    {/* 100 Level Nodes with Decade Tier Tabs */}
+                    <div className="space-y-3 pt-3 border-t border-[#a67c2e]/30">
+                      <div className="flex items-center justify-between">
+                        <span className="text-[11px] font-royal font-bold text-amber-400/90 uppercase tracking-wider block">
+                          Levels {partStart} – {partEnd} (100 Levels)
+                        </span>
+                        <span className="text-[10px] text-amber-300/70 font-mono">
+                          {partLevels.filter(l => progress.completedLevels.includes(l)).length}/100 Done
+                        </span>
+                      </div>
+
+                      {/* Decade Tabs (1-10, 11-20, ... All) */}
+                      <div className="flex items-center space-x-1.5 overflow-x-auto pb-1.5 text-[10px] font-royal font-semibold">
+                        {Array.from({ length: 10 }, (_, dIdx) => {
+                          const dStart = partStart + dIdx * 10;
+                          const dEnd = dStart + 9;
+                          const isDecadeActive = activeDec === dIdx;
+                          const dCompleted = Array.from({ length: 10 }, (_, i) => dStart + i).filter(l => progress.completedLevels.includes(l)).length;
+
+                          return (
+                            <button
+                              key={dIdx}
+                              onClick={() => setActiveDecade(prev => ({ ...prev, [part.partNumber]: dIdx }))}
+                              className={`px-2 py-1 rounded-lg border whitespace-nowrap transition-all cursor-pointer ${
+                                isDecadeActive
+                                  ? 'bg-amber-500/30 border-amber-400 text-amber-100 shadow-[0_0_8px_rgba(245,158,11,0.4)]'
+                                  : 'bg-[#12182b]/80 border-slate-700/80 text-slate-400 hover:text-amber-200'
+                              }`}
+                            >
+                              {dStart}–{dEnd} {dCompleted === 10 ? '✓' : ''}
+                            </button>
+                          );
+                        })}
+                        <button
+                          onClick={() => setActiveDecade(prev => ({ ...prev, [part.partNumber]: -1 }))}
+                          className={`px-2 py-1 rounded-lg border whitespace-nowrap transition-all cursor-pointer ${
+                            activeDec === -1
+                              ? 'bg-amber-500/30 border-amber-400 text-amber-100 shadow-[0_0_8px_rgba(245,158,11,0.4)]'
+                              : 'bg-[#12182b]/80 border-slate-700/80 text-slate-400 hover:text-amber-200'
+                          }`}
+                        >
+                          All 100
+                        </button>
+                      </div>
                       
-                      <div className="grid grid-cols-5 gap-2">
-                        {partLevels.map((lvlNum) => {
+                      <div className={`grid gap-2 ${activeDec === -1 ? 'grid-cols-5 sm:grid-cols-10 max-h-72 overflow-y-auto pr-1' : 'grid-cols-5'}`}>
+                        {displayedLevels.map((lvlNum) => {
                           const isDone = progress.completedLevels.includes(lvlNum);
                           const isCurrent = progress.currentLevel === lvlNum;
                           const isLocked = lvlNum > progress.currentLevel;
@@ -246,7 +298,7 @@ export const StoryMap: React.FC = () => {
               MAHABHARATA SCHOLAR ACHIEVEMENT
             </h2>
             <p className="text-xs md:text-sm text-amber-200/90 max-w-xl mx-auto font-serif leading-relaxed">
-              Upon conquering all 100 levels, unlock the prestigious Mahabharata Scholar Certificate, enter your details, and print or download your royal award.
+              Upon conquering all 1,000 levels, unlock the prestigious Mahabharata Scholar Certificate, enter your details, and print or download your royal award.
             </p>
           </div>
           <button

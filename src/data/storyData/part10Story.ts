@@ -174,10 +174,13 @@ export const PART_10_STORY: StoryPart = {
       speaker: 'Yudhishthira calling Duryodhana from the lake',
       speaker_te: 'సరస్సు ఒడ్డు నుండి ధర్మరాజు పిలుపు',
       speaker_hi: 'युधिष्ठिर द्वारा दुर्योधन को ललकार',
-      imageUrl: '/assets/wallpapers/bhima.jpg',
+      imageUrl: '/assets/storybook/page_54_0_Image0.jpg',
       imageCaption: 'Duryodhana emerging with his mace from the churning waters of Lake Dwaipayana.',
       imageCaption_te: 'చేతిలో గదతో ద్వైపాయన సరస్సు నుండి బయటకు వస్తున్న దుర్యోధనుడు.',
-      imageCaption_hi: 'द्वैपायन सरोवर से गदा लेकर बाहर निकलता घायल दुर्योधन।'
+      imageCaption_hi: 'द्वैपायन सरोवर से गदा लेकर बाहर निकलता घायल दुर्योधन।',
+      moralLesson: "Wisdom imparted by selfless elders on duty, governance, and devotion lights the path for humanity.",
+      moralLesson_te: "నిస్వార్థులైన పెద్దలు బోధించిన రాజధర్మం మరియు విష్ణు సహస్రనామం మానవాళికి నిత్య మార్గదర్శకాలు.",
+      moralLesson_hi: "कर्तव्य और शासन का जो ज्ञान शरशय्या पर भीष्म ने दिया, वह युगों-युगों तक मानव जाति का पथप्रदर्शन करता रहेगा।"
     },
     {
       pageNumber: 2,
@@ -211,10 +214,13 @@ export const PART_10_STORY: StoryPart = {
       speaker: 'Bhima roaring over the fallen Duryodhana',
       speaker_te: 'రౌద్ర భీముని విజయ గర్జన',
       speaker_hi: 'भीमसेन का भीषण गर्जन',
-      imageUrl: '/assets/wallpapers/bhima.jpg',
+      imageUrl: '/assets/storybook/page_56_0_Image0.jpg',
       imageCaption: 'Bhima striking the fatal blow with his mace to the thighs of Prince Duryodhana.',
       imageCaption_te: 'దుర్యోధనుని తొడలపై గదతో దాడి చేస్తున్న భీమసేనుడు.',
-      imageCaption_hi: 'दुर्योधन की जंघा पर गदा का अंतिम प्रहार करते महाबली भीम।'
+      imageCaption_hi: 'दुर्योधन की जंघा पर गदा का अंतिम प्रहार करते महाबली भीम।',
+      moralLesson: "A life lived strictly by vow and righteous duty concludes in peaceful, radiant liberation.",
+      moralLesson_te: "ప్రతిజ్ఞకు, ధర్మానికి కట్టుబడి జీవించిన జీవితం దివ్యమైన శాంతి మరియు మోక్షాన్ని అందుకుంటుంది.",
+      moralLesson_hi: "वचनों और मर्यादाओं पर अडिग रहने वाला जीवन अंत में शांति और परम पद प्राप्त करता है।"
     },
     {
       pageNumber: 3,
@@ -248,10 +254,13 @@ export const PART_10_STORY: StoryPart = {
       speaker: 'Draupadi howling in grief',
       speaker_te: 'పుత్రశోకంతో ద్రౌపది ఆర్తనాదం',
       speaker_hi: 'शोकसंतप्त द्रौपदी का संकल्प',
-      imageUrl: '/assets/wallpapers/draupadi.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'Empress Draupadi weeping beside the slain Upapandavas in the burned encampment.',
       imageCaption_te: 'హతమైన ఉపపాండవుల శవాల వద్ద గుండెలు పగిలేలా విలపిస్తున్న ద్రౌపదీ దేవి.',
-      imageCaption_hi: 'शिविर में अपने पांचों मृत पुत्रों के शवों पर विलाप करती महारानी द्रौपदी।'
+      imageCaption_hi: 'शिविर में अपने पांचों मृत पुत्रों के शवों पर विलाप करती महारानी द्रौपदी।',
+      moralLesson: "Righteous governance heals the deep wounds of war through justice, charity, and public welfare.",
+      moralLesson_te: "ధర్మబద్ధమైన పరిపాలన న్యాయం, దానం మరియు ప్రజాసేవ ద్వారా మాత్రమే సమాజ గాయాలను మాన్పగలదు.",
+      moralLesson_hi: "न्याय, दान और जनकल्याण से ही युद्ध के घावों को भरकर राष्ट्र को पुनः समृद्ध किया जा सकता है।"
     },
     {
       pageNumber: 4,
@@ -285,10 +294,13 @@ export const PART_10_STORY: StoryPart = {
       speaker: 'Sri Krishna resurrecting Prince Parikshit',
       speaker_te: 'పరీక్షిత్తును బతికిస్తూ శ్రీకృష్ణుని సత్య శపథం',
       speaker_hi: 'श्रीकृष्ण की सत्य-प्रतिज्ञा और परीक्षित का पुनर्जीवन',
-      imageUrl: '/assets/wallpapers/krishna.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'Lord Krishna placing His blessing hands over Princess Uttara, granting life to infant Parikshit.',
       imageCaption_te: 'ఉత్తరా దేవిని ఆశీర్వదించి పరీక్షిత్తుకు ప్రాణదానం చేస్తున్న శ్రీకృష్ణ పరమాత్మ.',
-      imageCaption_hi: 'उत्तरा के कक्ष में शिशु परीक्षित को जीवनदान देते भगवान श्रीकृष्ण।'
+      imageCaption_hi: 'उत्तरा के कक्ष में शिशु परीक्षित को जीवनदान देते भगवान श्रीकृष्ण।',
+      moralLesson: "When worldly responsibilities are complete, turning inward toward spiritual union brings eternal peace.",
+      moralLesson_te: "లౌకిక బాధ్యతలు ముగిశాక భగవదారాధన వైపు మనస్సును మళ్లించడమే పరమ ప్రశాంతతను ఇస్తుంది.",
+      moralLesson_hi: "सांसारिक उत्तरदायित्व पूरे होने पर अंतर्मुखी होकर परमात्मा में लीन होना ही जीवन का लक्ष्य है।"
     },
     {
       pageNumber: 5,
@@ -322,10 +334,13 @@ export const PART_10_STORY: StoryPart = {
       speaker: 'Sage Vyasa to Emperor Yudhishthira',
       speaker_te: 'ధర్మరాజుతో వ్యాస మహర్షి',
       speaker_hi: 'व्यास मुनि का युधिष्ठिर को उपदेश',
-      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
+      imageUrl: '/assets/storybook/page_59_0_Image0.jpg',
       imageCaption: 'The majestic coronation of Emperor Yudhishthira and Empress Draupadi in Hastinapur.',
       imageCaption_te: 'హస్తినాపురంలో ధర్మరాజు, ద్రౌపదీ దేవిల దివ్య పట్టాభిషేకం.',
-      imageCaption_hi: 'हस्तिनापुर के राजसिंहासन पर सम्राट युधिष्ठिर और महारानी द्रौपदी का अभिषेक।'
+      imageCaption_hi: 'हस्तिनापुर के राजसिंहासन पर सम्राट युधिष्ठिर और महारानी द्रौपदी का अभिषेक।',
+      moralLesson: "Everything born in the material cosmos must pass; eternal Dharma and pure love alone endure.",
+      moralLesson_te: "భౌతిక జగత్తులో జన్మించిన ప్రతిదీ నశించక తప్పదు; శాశ్వతమైనది కేవలం ధర్మం మరియు భగవత్ప్రేమ మాత్రమే.",
+      moralLesson_hi: "इस नश्वर संसार में कुछ भी स्थाई नहीं है; केवल धर्म और ईश्वर की भक्ति ही शाश्वत सत्य है।"
     },
     {
       pageNumber: 6,
@@ -359,10 +374,13 @@ export const PART_10_STORY: StoryPart = {
       speaker: 'Bhishma delivering the Vishnu Sahasranama',
       speaker_te: 'విష్ణు సహస్రనామాన్ని పఠిస్తున్న భీష్ముడు',
       speaker_hi: 'भीष्म पितामह द्वारा विष्णु सहस्रनाम का गान',
-      imageUrl: '/assets/wallpapers/bhishma.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'Grandsire Bhishma chanting the Sri Vishnu Sahasranama as Lord Krishna smiles in benediction.',
       imageCaption_te: 'శ్రీకృష్ణుని సమక్షంలో విష్ణు సహస్రనామాన్ని గానం చేస్తున్న భీష్మ పితామహుడు.',
-      imageCaption_hi: 'श्रीकृष्ण के चरणों में विष्णु सहस्रनाम का उपदेश देते शरशय्या पर लेटे पितामह भीष्म।'
+      imageCaption_hi: 'श्रीकृष्ण के चरणों में विष्णु सहस्रनाम का उपदेश देते शरशय्या पर लेटे पितामह भीष्म।',
+      moralLesson: "Crowns and empires must ultimately be renounced for the soul’s solitary pilgrimage to truth.",
+      moralLesson_te: "రాజ్యాలు, కిరీటాలన్నీ చివరకు వదిలిపెట్టవలసిందే; ఆత్మ చేసే అంతిమ ప్రయాణమే శాశ్వతం.",
+      moralLesson_hi: "संसार के समस्त वैभव को एक दिन पीछे छोड़ना ही पड़ता है; केवल आत्मा की शुद्धि साथ जाती है।"
     },
     {
       pageNumber: 7,
@@ -399,7 +417,10 @@ export const PART_10_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'King Yudhishthira and the faithful dog trekking across the pristine snow slopes of the Himalayas.',
       imageCaption_te: 'మంచుకొండల్లో నమ్మకమైన కుక్కతో కలిసి నడుస్తున్న ధర్మరాజు.',
-      imageCaption_hi: 'बर्फीले हिमालय पर श्वान के साथ अकेले आगे बढ़ते धर्मराज युधिष्ठिर।'
+      imageCaption_hi: 'बर्फीले हिमालय पर श्वान के साथ अकेले आगे बढ़ते धर्मराज युधिष्ठिर।',
+      moralLesson: "Never abandon those who depend on your loyalty and love, even if heaven itself is offered.",
+      moralLesson_te: "శరణు కోరిన, నిన్ను నమ్ముకున్న జీవులను స్వర్గం కోసమైనా సరే వదిలిపెట్టకపోవడమే పరమ ధర్మం.",
+      moralLesson_hi: "स्वर्ग के सुख के लिए भी अपने प्रति निष्ठावान साथी या आश्रित का त्याग न करना ही सर्वोच्च धर्म है।"
     },
     {
       pageNumber: 8,
@@ -439,7 +460,10 @@ export const PART_10_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/sanatana-dharma.jpg',
       imageCaption: 'The golden gates of heaven opening for Emperor Yudhishthira and Lord Dharma under cosmic light.',
       imageCaption_te: 'స్వర్గద్వారాల వద్ద ధర్మదేవత ఆశీస్సులతో స్వర్గారోహణ చేస్తున్న ధర్మరాజు.',
-      imageCaption_hi: 'स्वर्ग के स्वर्ण-द्वारों पर धर्मदेव के साथ सशरीर प्रवेश करते धर्मराज युधिष्ठिर।'
+      imageCaption_hi: 'स्वर्ग के स्वर्ण-द्वारों पर धर्मदेव के साथ सशरीर प्रवेश करते धर्मराज युधिष्ठिर।',
+      moralLesson: "Yato Dharmas Tato Jayah — Where there is righteousness, there is eternal victory and transcendent peace.",
+      moralLesson_te: "యతో ధర్మస్తతో జయః — ఎక్కడ ధర్మం ఉంటుందో అక్కడే శాశ్వత విజయం మరియు శాంతి లభిస్తాయి.",
+      moralLesson_hi: "यतो धर्मस्ततो जयः — जहाँ धर्म है, वहीं शाश्वत विजय, मुक्ति और परम शांति है।"
     }
   ],
 

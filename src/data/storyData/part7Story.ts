@@ -174,10 +174,13 @@ export const PART_7_STORY: StoryPart = {
       speaker: 'Lord Krishna awakening from rest',
       speaker_te: 'నిద్రలేస్తూ చిరునవ్వుతో శ్రీకృష్ణుడు',
       speaker_hi: 'नेत्र खोलते हुए भगवान श्रीकृष्ण के शब्द',
-      imageUrl: '/assets/wallpapers/krishna.jpg',
+      imageUrl: '/assets/quiz-bg-kurukshetra.jpg',
       imageCaption: 'Lord Krishna resting on his couch, with proud Duryodhana at his head and humble Arjuna at his feet.',
       imageCaption_te: 'తలవైపు దుర్యోధనుడు, పాదాల వద్ద అర్జునుడు ఉండగా నిద్రలేస్తున్న శ్రీకృష్ణుడు.',
-      imageCaption_hi: 'भगवान श्रीकृष्ण की शय्या के सिरहाने दुर्योधन और चरणों में अर्जुन का ऐतिहासिक दृश्य।'
+      imageCaption_hi: 'भगवान श्रीकृष्ण की शय्या के सिरहाने दुर्योधन और चरणों में अर्जुन का ऐतिहासिक दृश्य।',
+      moralLesson: "When all avenues of peace are exhausted, fighting for righteousness becomes the ultimate duty.",
+      moralLesson_te: "శాంతి ప్రయత్నాలు విఫలమైనప్పుడు ధర్మరక్షణ కోసం పోరాడటమే పరమ కర్తవ్యం.",
+      moralLesson_hi: "जब शांति के समस्त प्रयास विफल हो जाएँ, तब धर्म की रक्षा हेतु युद्ध करना ही परम कर्तव्य है।"
     },
     {
       pageNumber: 2,
@@ -211,10 +214,13 @@ export const PART_7_STORY: StoryPart = {
       speaker: 'Arjuna choosing Lord Krishna',
       speaker_te: 'కృష్ణుడిని ఎంచుకుంటూ అర్జునుని భక్తి',
       speaker_hi: 'श्रीकृष्ण का वरण करते हुए अर्जुन के उद्गार',
-      imageUrl: '/assets/wallpapers/krishna.jpg',
+      imageUrl: '/assets/wallpapers/yudhishthira.jpg',
       imageCaption: 'Arjuna embracing Lord Krishna while Duryodhana departs smiling with the Yadava legions.',
       imageCaption_te: 'శ్రీకృష్ణుని శరణు వేడుకుంటున్న అర్జునుడు; సైన్యంతో వెళ్లిపోతున్న దుర్యోధనుడు.',
-      imageCaption_hi: 'श्रीकृष्ण का पावन चरण स्पर्श करते अर्जुन और सेना लेकर विदा होता दुर्योधन।'
+      imageCaption_hi: 'श्रीकृष्ण का पावन चरण स्पर्श करते अर्जुन और सेना लेकर विदा होता दुर्योधन।',
+      moralLesson: "Seeking the blessings and forgiveness of elders before battle sanctifies the warrior’s cause.",
+      moralLesson_te: "యుద్ధానికి ముందే పెద్దల ఆశీస్సులు పొందడం ధర్మయుద్ధానికి అసలైన పవిత్రతను చేకూరుస్తుంది.",
+      moralLesson_hi: "बड़ों के चरणों में शीश झुकाकर आशीर्वाद लेना ही विजय का सबसे पहला चरण है।"
     },
     {
       pageNumber: 3,
@@ -248,10 +254,13 @@ export const PART_7_STORY: StoryPart = {
       speaker: 'Lord Krishna departing for Hastinapur',
       speaker_te: 'రాయబారానికి బయలుదేరుతూ శ్రీకృష్ణుడు',
       speaker_hi: 'हस्तिनापुर प्रस्थान करते हुए श्रीकृष्ण के विचार',
-      imageUrl: '/assets/wallpapers/krishna.jpg',
+      imageUrl: '/assets/wallpapers/arjuna.jpg',
       imageCaption: 'Lord Krishna arriving in his divine chariot at the golden archways of Hastinapur.',
       imageCaption_te: 'హస్తినాపుర రాజతోరణాల వద్దకు చేరుకున్న శ్రీకృష్ణుని రథం.',
-      imageCaption_hi: 'हस्तिनापुर के भव्य सिंहद्वार पर शांतिदूत श्रीकृष्ण का पावन आगमन।'
+      imageCaption_hi: 'हस्तिनापुर के भव्य सिंहद्वार पर शांतिदूत श्रीकृष्ण का पावन आगमन।',
+      moralLesson: "Emotional confusion blinds us to our sacred duty; wisdom alone dispels deep inner dejection.",
+      moralLesson_te: "భావోద్వేగాల వల్ల కర్తవ్యాన్ని విస్మరించకూడదు; జ్ఞానమే ఆత్మను జాగృతం చేస్తుంది.",
+      moralLesson_hi: "मोह और शोक मनुष्य को कर्तव्य से भटकाते हैं; आत्मज्ञान ही इस अंधकार को दूर करता है।"
     },
     {
       pageNumber: 4,
@@ -285,10 +294,13 @@ export const PART_7_STORY: StoryPart = {
       speaker: 'Sri Krishna rejecting Duryodhana’s banquet',
       speaker_te: 'దుర్యోధనునికి సమాధానమిస్తూ శ్రీకృష్ణుడు',
       speaker_hi: 'दुर्योधन का निमंत्रण ठुकराते हुए श्रीकृष्ण',
-      imageUrl: '/assets/wallpapers/sanatana-dharma.jpg',
+      imageUrl: '/assets/wallpapers/krishna.jpg',
       imageCaption: 'Lord Krishna seated on a simple straw mat at Vidura’s cottage, partaking of humble food.',
       imageCaption_te: 'విదురుని కుటీరంలో సాదాసీదా ఆకుకూరను ఆరగిస్తున్న శ్రీకృష్ణ పరమాత్మ.',
-      imageCaption_hi: 'विदुर की कुटिया में प्रेमपूर्वक सात्विक भोजन ग्रहण करते द्वारकाधीश श्रीकृष्ण।'
+      imageCaption_hi: 'विदुर की कुटिया में प्रेमपूर्वक सात्विक भोजन ग्रहण करते द्वारकाधीश श्रीकृष्ण।',
+      moralLesson: "You have a right to your duty alone, never to the fruits thereof; perform action with detached love.",
+      moralLesson_te: "కర్తవ్యం చేయడంలోనే నీకు అధికారం ఉంది, ఫలితంపై కాదు; నిస్వార్థ కర్మయే మోక్ష మార్గం.",
+      moralLesson_hi: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन—कर्म करना तुम्हारा अधिकार है, फल पर नहीं।"
     },
     {
       pageNumber: 5,
@@ -325,7 +337,10 @@ export const PART_7_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/krishna.jpg',
       imageCaption: 'Lord Krishna standing majestically in the center of the Kuru Sabha, appealing for righteousness.',
       imageCaption_te: 'సభ మధ్యలో నిలబడి శాంతిని బోధిస్తున్న శ్రీకృష్ణ పరమాత్మ.',
-      imageCaption_hi: 'हस्तिनापुर की राजसभा में शांति का संदेश देते परम पुरुषोत्तम श्रीकृष्ण।'
+      imageCaption_hi: 'हस्तिनापुर की राजसभा में शांति का संदेश देते परम पुरुषोत्तम श्रीकृष्ण।',
+      moralLesson: "We are but humble instruments in the Divine will; surrender anxiety and act with righteous courage.",
+      moralLesson_te: "మనం పరమాత్ముని సంకల్పంలో నిమిత్త మాత్రులం; భయాన్ని వీడి ధైర్యంగా ముందుకు సాగాలి.",
+      moralLesson_hi: "हम सब ईश्वर की लीला में केवल निमित्त मात्र हैं; निर्भय होकर धर्म का पालन करो।"
     },
     {
       pageNumber: 6,
@@ -359,10 +374,13 @@ export const PART_7_STORY: StoryPart = {
       speaker: 'Duryodhana refusing five villages',
       speaker_te: 'శాంతిని కాలరాస్తున్న దుర్యోధనుడు',
       speaker_hi: 'दुर्योधन का अंतिम हठ',
-      imageUrl: '/assets/wallpapers/karna.jpg',
+      imageUrl: '/assets/storybook/page_54_0_Image0.jpg',
       imageCaption: 'The arrogant Duryodhana defying Lord Krishna before the appalled assembly of elders.',
       imageCaption_te: 'పెద్దల ముందు శ్రీకృష్ణుని మాటలను ధిక్కరిస్తున్న దుర్యోధనుడు.',
-      imageCaption_hi: 'भरी सभा में श्रीकृष्ण के शांति प्रस्ताव को अहंकार से ठुकराता दुर्योधन।'
+      imageCaption_hi: 'भरी सभा में श्रीकृष्ण के शांति प्रस्ताव को अहंकार से ठुकराता दुर्योधन।',
+      moralLesson: "Valour bound to an unrighteous throne cannot avert tragedy, despite unmatched martial prowess.",
+      moralLesson_te: "అధర్మానికి కట్టుబడిన పరాక్రమం ఎంతటి గొప్పదైనా చివరకు విషాదానికే దారితీస్తుంది.",
+      moralLesson_hi: "अधर्म के सिंहासन से बंधा पराक्रम कभी विजय नहीं दिला सकता, चाहे वह भीष्म का ही क्यों न हो।"
     },
     {
       pageNumber: 7,
@@ -399,7 +417,10 @@ export const PART_7_STORY: StoryPart = {
       imageUrl: '/assets/wallpapers/krishna.jpg',
       imageCaption: 'The multi-armed, multi-faced cosmic Vishwaroopa of Sri Krishna illuminating the assembly hall.',
       imageCaption_te: 'హస్తినాపుర సభలో శ్రీకృష్ణుని అనంత విశ్వరూప దర్శనం.',
-      imageCaption_hi: 'हस्तिनापुर की सभा में भगवान श्रीकृष्ण का दैदीप्यमान विराट विश्वरूप।'
+      imageCaption_hi: 'हस्तिनापुर की सभा में भगवान श्रीकृष्ण का दैदीप्यमान विराट विश्वरूप।',
+      moralLesson: "God will break His own pledge out of boundless love to protect and awaken His true devotee.",
+      moralLesson_te: "భక్తుని రక్షించడానికి మరియు కర్తవ్యాన్ని గుర్తుచేయడానికి భగవంతుడు తన ప్రతిజ్ఞను సైతం పక్కనపెడతాడు.",
+      moralLesson_hi: "अपने अनन्य भक्त की रक्षा और धर्म की विजय के लिए भगवान स्वयं का नियम भी तोड़ देते हैं।"
     },
     {
       pageNumber: 8,
@@ -433,10 +454,13 @@ export const PART_7_STORY: StoryPart = {
       speaker: 'Karna’s solemn promise to Mother Kunti',
       speaker_te: 'కుంతీదేవికి కర్ణుని చారిత్రక వరం',
       speaker_hi: 'माता कुंती को दानवीर कर्ण का पावन वचन',
-      imageUrl: '/assets/wallpapers/karna.jpg',
+      imageUrl: '/assets/storybook/page_56_0_Image0.jpg',
       imageCaption: 'Karna taking his famous pledge before Mother Kunti on the tranquil banks of holy Ganga.',
       imageCaption_te: 'గంగా నది ఒడ్డున కుంతీదేవికి మాట ఇస్తున్న దానవీర కర్ణుడు.',
-      imageCaption_hi: 'पवित्र गंगा के तट पर माता कुंती को अभयदान का वचन देते दानवीर कर्ण।'
+      imageCaption_hi: 'पवित्र गंगा के तट पर माता कुंती को अभयदान का वचन देते दानवीर कर्ण।',
+      moralLesson: "The wheel of karma turns inexorably; a lifetime dedicated to duty finds peaceful rest on arrows.",
+      moralLesson_te: "కర్మఫలం తప్పక నెరవేరుతుంది; సత్యనిష్టతో జీవించిన యోధుడు బాణాల శయ్యపై కూడా ప్రశాంతతను పొందుతాడు.",
+      moralLesson_hi: "कर्म का चक्र अचूक है; मर्यादा और त्याग से भरा जीवन शरशय्या पर भी शांति और मोक्ष पाता है।"
     }
   ],
 

@@ -43,7 +43,7 @@ export const Navbar: React.FC = () => {
           <div className="w-px h-3.5 bg-amber-500/40" />
           <div className="text-xs text-amber-200 font-royal">
             <span className="text-amber-400/80 text-[10px] font-bold">Level </span>
-            <span className="font-extrabold text-white">{progress.currentLevel}/50</span>
+            <span className="font-extrabold text-white">{progress.currentLevel}/1000</span>
           </div>
         </div>
 

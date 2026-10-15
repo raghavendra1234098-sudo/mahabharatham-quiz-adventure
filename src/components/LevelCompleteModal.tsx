@@ -21,8 +21,8 @@ export const LevelCompleteModal: React.FC<LevelCompleteProps> = ({
   onClose,
 }) => {
   const { progress } = useGame();
-  const isPartCompleted = levelNumber % 10 === 0;
-  const isGameCompleted = levelNumber === 100;
+  const isPartCompleted = levelNumber % 100 === 0;
+  const isGameCompleted = levelNumber === 1000;
   const character = CHARACTERS_DATA.find((c) => c.storyPart === partNumber);
 
   return (
@@ -35,7 +35,7 @@ export const LevelCompleteModal: React.FC<LevelCompleteProps> = ({
         {/* Header Title */}
         <div className="space-y-1 relative z-10">
           <span className="text-xs font-bold text-amber-400 uppercase tracking-widest block font-royal">
-            Level {levelNumber} of 100 Completed!
+            Level {levelNumber} of 1000 Completed!
           </span>
           <h2 className="text-2xl md:text-3xl font-black font-royal gold-gradient-text">
             {isGameCompleted ? 'महाभारत महाविद्वान् !' : 'विजयी भव • VICTORY!'}

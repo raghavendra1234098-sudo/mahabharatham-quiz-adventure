@@ -1,16 +1,28 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { IllustratedStoryPage } from '../../types/game';
 import { audioService } from '../../services/audioService';
-import { ChevronLeft, ChevronRight, Volume2, BookOpen, MessageSquareQuote, Sparkles, Award } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  Volume2,
+  VolumeX,
+  Lightbulb,
+  MessageSquareQuote,
+  Sparkles,
+  ChevronDown,
+  Settings
+} from 'lucide-react';
 
 interface IllustratedPageReaderProps {
   pages: IllustratedStoryPage[];
   currentPageIndex: number;
   onPageChange: (index: number) => void;
   onFinishPages: () => void;
+  onBackToIntro?: () => void;
   language: 'en' | 'te' | 'hi';
   onLanguageChange: (lang: 'en' | 'te' | 'hi') => void;
   partNumber: number;
+  partTitle?: string;
 }
 
 export const IllustratedPageReader: React.FC<IllustratedPageReaderProps> = ({
@@ -18,16 +30,28 @@ export const IllustratedPageReader: React.FC<IllustratedPageReaderProps> = ({
   currentPageIndex,
   onPageChange,
   onFinishPages,
+  onBackToIntro,
   language,
   onLanguageChange,
-  partNumber
+  partNumber,
+  partTitle
 }) => {
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
+  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [showLangMenu, setShowLangMenu] = useState(false);
 
   const page = pages[currentPageIndex] || pages[0];
   const isFirstPage = currentPageIndex === 0;
   const isLastPage = currentPageIndex === pages.length - 1;
+
+  // Stop speech when page changes
+  useEffect(() => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      setIsPlayingAudio(false);
+    }
+  }, [currentPageIndex, language]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -97,12 +121,6 @@ export const IllustratedPageReader: React.FC<IllustratedPageReaderProps> = ({
     return page.sceneTag;
   };
 
-  const getHookLine = () => {
-    if (language === 'te' && page.hookLine_te) return page.hookLine_te;
-    if (language === 'hi' && page.hookLine_hi) return page.hookLine_hi;
-    return page.hookLine;
-  };
-
   const getParagraphs = () => {
     if (language === 'te' && page.paragraphs_te && page.paragraphs_te.length > 0) return page.paragraphs_te;
     if (language === 'hi' && page.paragraphs_hi && page.paragraphs_hi.length > 0) return page.paragraphs_hi;
@@ -121,231 +139,288 @@ export const IllustratedPageReader: React.FC<IllustratedPageReaderProps> = ({
     return page.speaker;
   };
 
-  const getImageCaption = () => {
-    if (language === 'te' && page.imageCaption_te) return page.imageCaption_te;
-    if (language === 'hi' && page.imageCaption_hi) return page.imageCaption_hi;
-    return page.imageCaption;
+  const getMoralLesson = () => {
+    if (language === 'te' && page.moralLesson_te) return page.moralLesson_te;
+    if (language === 'hi' && page.moralLesson_hi) return page.moralLesson_hi;
+    if (page.moralLesson) return page.moralLesson;
+
+    // Default universal moral reflection if page lacks dedicated field
+    if (language === 'te') {
+      return 'సత్యం, ధర్మం మరియు కర్తవ్య పాలనలే మానవ జీవితానికి శాశ్వత విజయ మార్గాలు.';
+    }
+    if (language === 'hi') {
+      return 'सत्य, धर्म और कर्तव्यनिष्ठा ही जीवन में शाश्वत विजय का मार्ग प्रशस्त करते हैं।';
+    }
+    return 'True strength lies in self-mastery, upholding righteous duty (Dharma), and choosing virtue even in times of trial.';
+  };
+
+  const getHeaderPartTitle = () => {
+    if (page.partTitle) {
+      if (language === 'te' && page.partTitle_te) return page.partTitle_te;
+      if (language === 'hi' && page.partTitle_hi) return page.partTitle_hi;
+      return page.partTitle;
+    }
+    if (partTitle) return partTitle;
+    if (language === 'te') return 'ఆది పర్వం - ఆరంభం';
+    if (language === 'hi') return 'आदि पर्व - उत्पत्ति';
+    return 'The Origins';
   };
 
   // Text to speech narration
-  const handleNarrate = () => {
-    if ('speechSynthesis' in window) {
+  const handleToggleNarrate = () => {
+    if (!('speechSynthesis' in window)) return;
+
+    if (isPlayingAudio) {
       window.speechSynthesis.cancel();
-      const paras = getParagraphs().join(' ');
-      const utterance = new SpeechSynthesisUtterance(paras);
-      utterance.rate = 0.92;
-      utterance.pitch = 1.0;
-      if (language === 'te') utterance.lang = 'te-IN';
-      else if (language === 'hi') utterance.lang = 'hi-IN';
-      else utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
+      setIsPlayingAudio(false);
+      return;
     }
+
+    window.speechSynthesis.cancel();
+    const paras = getParagraphs().join(' ');
+    const moral = getMoralLesson();
+    const fullText = `${getPageTitle()}. ${paras}. ${moral}`;
+    const utterance = new SpeechSynthesisUtterance(fullText);
+    utterance.rate = 0.92;
+    utterance.pitch = 1.0;
+    if (language === 'te') utterance.lang = 'te-IN';
+    else if (language === 'hi') utterance.lang = 'hi-IN';
+    else utterance.lang = 'en-US';
+
+    utterance.onend = () => setIsPlayingAudio(false);
+    utterance.onerror = () => setIsPlayingAudio(false);
+
+    window.speechSynthesis.speak(utterance);
+    setIsPlayingAudio(true);
   };
 
   const paragraphs = getParagraphs();
   const dialogueQuote = getDialogueQuote();
   const speaker = getSpeaker();
+  const moralLesson = getMoralLesson();
 
   return (
     <div
-      className="w-full max-w-4xl mx-auto space-y-4 select-text"
+      className="w-full max-w-2xl md:max-w-3xl mx-auto flex flex-col space-y-3 select-text"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Top Utility Bar: Language Selector & Audio Narration */}
-      <div className="flex items-center justify-between px-2 text-xs">
-        {/* Page progress indicator */}
-        <div className="flex items-center space-x-2">
-          <BookOpen className="w-4 h-4 text-amber-400" />
-          <span className="font-royal font-bold text-amber-200">
-            {language === 'te'
-              ? `పుట ${currentPageIndex + 1} / ${pages.length}`
-              : language === 'hi'
-              ? `पृष्ठ ${currentPageIndex + 1} / ${pages.length}`
-              : `Page ${currentPageIndex + 1} of ${pages.length}`}
-          </span>
-        </div>
-
-        {/* Center: Language Switcher directly on page */}
-        <div className="flex items-center bg-[#0a1124] p-1 rounded-xl border border-amber-500/30">
-          {(['en', 'te', 'hi'] as const).map((lang) => (
-            <button
-              key={lang}
-              onClick={() => {
-                audioService.playClick();
-                onLanguageChange(lang);
-              }}
-              className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all ${
-                language === lang
-                  ? 'bg-amber-500 text-slate-950 shadow-md font-bold'
-                  : 'text-amber-200/70 hover:text-amber-100 hover:bg-slate-800'
-              }`}
-            >
-              {lang === 'en' ? 'EN' : lang === 'te' ? 'తెలుగు' : 'हिन्दी'}
-            </button>
-          ))}
-        </div>
-
-        {/* Read aloud button */}
+      {/* ======================================================== */}
+      {/* 1. TOP BAR — Exactly matching Reference 3 design         */}
+      {/* ======================================================== */}
+      <header className="flex items-center justify-between px-2 sm:px-4 py-2.5 bg-[#070d1d] border-b border-amber-500/30 rounded-2xl shadow-md">
+        {/* Left: Circular Gold-Bordered Back Button */}
         <button
-          onClick={handleNarrate}
-          className="p-1.5 px-3 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-amber-300 transition-colors flex items-center space-x-1.5 text-xs font-serif"
-          title="Listen to story"
+          onClick={() => {
+            audioService.playClick();
+            if (onBackToIntro) onBackToIntro();
+          }}
+          className="w-10 h-10 rounded-full border border-amber-400/80 bg-[#0c142c] flex items-center justify-center text-amber-300 hover:text-amber-100 hover:bg-amber-500/20 active:scale-95 transition-all shadow-[0_0_10px_rgba(245,158,11,0.2)]"
+          title={language === 'te' ? 'వెనుకకు' : language === 'hi' ? 'पीछे' : 'Back'}
         >
-          <Volume2 className="w-3.5 h-3.5" />
-          <span className="hidden sm:inline">
-            {language === 'te' ? 'వినండి' : language === 'hi' ? 'सुनिए' : 'Listen'}
-          </span>
+          <ArrowLeft className="w-5 h-5 text-amber-400" />
         </button>
-      </div>
 
-      {/* Main Illustrated Book Page Card */}
-      <div className="bg-gradient-to-b from-[#0f172a] via-[#0d152c] to-[#070b18] rounded-3xl border-2 border-amber-500/40 shadow-[0_10px_50px_rgba(0,0,0,0.8)] overflow-hidden relative">
-        
-        {/* Ornate Gold Border Flares */}
-        <div className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-br from-amber-500/20 via-transparent to-transparent pointer-events-none" />
-        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-amber-500/20 via-transparent to-transparent pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-amber-500/20 via-transparent to-transparent pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-amber-500/20 via-transparent to-transparent pointer-events-none" />
-
-        {/* Cinematic Illustration Header */}
-        <div className="relative w-full h-56 sm:h-72 md:h-84 overflow-hidden bg-slate-950 border-b border-amber-500/30">
-          <img
-            src={page.imageUrl}
-            alt={getPageTitle()}
-            className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
-            onError={(e) => {
-              // fallback image if path error
-              (e.target as HTMLImageElement).src = '/assets/wallpapers/sanatana-dharma.jpg';
-            }}
-          />
-
-          {/* Vignette Gradients */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-black/40" />
-
-          {/* Scene Tag Badge */}
-          <div className="absolute top-4 left-4 z-10 flex items-center space-x-1.5 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-amber-400/50 text-amber-300 text-xs font-royal shadow-lg">
-            <Sparkles className="w-3 h-3 text-amber-400" />
-            <span>{getSceneTag()}</span>
+        {/* Center: Two-line Title (Part label + Chapter/Scene title) */}
+        <div className="flex-1 text-center px-3 min-w-0">
+          <div className="text-[11px] sm:text-xs font-serif font-medium text-amber-400 tracking-wider uppercase truncate">
+            {language === 'te'
+              ? `భాగం ${partNumber} — ${getHeaderPartTitle()}`
+              : language === 'hi'
+              ? `पर्व ${partNumber} — ${getHeaderPartTitle()}`
+              : `Part ${partNumber} — ${getHeaderPartTitle()}`}
           </div>
-
-          {/* Image Caption at bottom right */}
-          <div className="absolute bottom-3 right-4 left-4 text-right z-10 pointer-events-none">
-            <span className="inline-block px-3 py-1 rounded-lg bg-black/75 backdrop-blur-sm border border-amber-500/30 text-[11px] text-amber-200/90 font-serif italic">
-              {getImageCaption()}
-            </span>
-          </div>
+          <h1 className="text-xs sm:text-sm md:text-base font-royal font-bold text-amber-100 truncate tracking-wide">
+            {page.chapterNumber || currentPageIndex + 1}. {getPageTitle()}
+          </h1>
         </div>
 
-        {/* Story Body Content */}
-        <div className="p-6 md:p-8 space-y-6">
-          {/* Page Title & Hook Line */}
-          <div className="space-y-2 border-b border-amber-500/20 pb-4">
-            <div className="text-[11px] font-royal font-bold uppercase tracking-widest text-amber-400/80">
-              {language === 'te' ? `అధ్యాయం ${partNumber} • భాగం ${currentPageIndex + 1}` : language === 'hi' ? `पर्व ${partNumber} • दृश्य ${currentPageIndex + 1}` : `Episode ${currentPageIndex + 1} of ${pages.length}`}
-            </div>
+        {/* Right: Language Dropdown Pill & Audio/Settings Button */}
+        <div className="flex items-center space-x-2 relative">
+          {/* Language Selector Pill */}
+          <div className="relative">
+            <button
+              onClick={() => setShowLangMenu(!showLangMenu)}
+              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-full border border-amber-400/70 bg-[#0c142c] hover:bg-slate-800 text-amber-300 text-xs font-bold transition-all shadow-sm"
+              title="Change Language"
+            >
+              <span>{language.toUpperCase()}</span>
+              <ChevronDown className="w-3.5 h-3.5 text-amber-400" />
+            </button>
 
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-royal font-bold text-amber-100 tracking-wide leading-tight">
-              {getPageTitle()}
-            </h1>
-
-            {/* Hook Quote Line */}
-            {getHookLine() && (
-              <p className="text-xs sm:text-sm md:text-base font-serif italic text-amber-300/90 pt-1">
-                "{getHookLine()}"
-              </p>
+            {showLangMenu && (
+              <div className="absolute right-0 mt-2 w-32 bg-[#0c142c] border border-amber-400/50 rounded-xl shadow-xl overflow-hidden z-50">
+                {(['en', 'te', 'hi'] as const).map((lang) => (
+                  <button
+                    key={lang}
+                    onClick={() => {
+                      audioService.playClick();
+                      onLanguageChange(lang);
+                      setShowLangMenu(false);
+                    }}
+                    className={`w-full text-left px-3.5 py-2 text-xs font-serif flex items-center justify-between transition-colors ${
+                      language === lang
+                        ? 'bg-amber-500/25 text-amber-300 font-bold'
+                        : 'text-amber-100/80 hover:bg-amber-500/10'
+                    }`}
+                  >
+                    <span>{lang === 'en' ? 'English' : lang === 'te' ? 'తెలుగు' : 'हिन्दी'}</span>
+                    {language === lang && <span className="text-amber-400">✓</span>}
+                  </button>
+                ))}
+              </div>
             )}
           </div>
 
-          {/* Multi-paragraph Story Narration */}
-          <div className="space-y-4 text-slate-200 font-serif leading-relaxed text-sm sm:text-base md:text-[17px]">
-            {paragraphs.map((para, idx) => (
-              <p
-                key={idx}
-                className={
-                  idx === 0
-                    ? 'first-letter:text-4xl first-letter:font-royal first-letter:font-bold first-letter:text-amber-400 first-letter:float-left first-letter:mr-2.5 first-letter:leading-none'
-                    : ''
-                }
-              >
-                {para}
-              </p>
-            ))}
-          </div>
+          {/* Audio Narration / Listen Button */}
+          <button
+            onClick={handleToggleNarrate}
+            className={`w-10 h-10 rounded-full border border-amber-400/80 bg-[#0c142c] flex items-center justify-center transition-all shadow-md active:scale-95 ${
+              isPlayingAudio
+                ? 'bg-amber-500/30 text-amber-300 animate-pulse border-amber-300'
+                : 'text-amber-300 hover:text-amber-100 hover:bg-amber-500/20'
+            }`}
+            title={isPlayingAudio ? 'Stop Narration' : 'Listen to story'}
+          >
+            {isPlayingAudio ? (
+              <VolumeX className="w-4 h-4 text-amber-300" />
+            ) : (
+              <Volume2 className="w-4 h-4 text-amber-400" />
+            )}
+          </button>
+        </div>
+      </header>
 
-          {/* Highlighted Dialogue Quote Box */}
-          {dialogueQuote && (
-            <div className="relative mt-6 p-4 md:p-5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-yellow-500/5 to-amber-500/10 border-l-4 border-amber-400 border-y border-r border-amber-500/20 shadow-md">
-              <MessageSquareQuote className="w-5 h-5 text-amber-400 absolute top-3 right-4 opacity-40" />
+      {/* ======================================================== */}
+      {/* 2. HERO ILLUSTRATION — Generous ~40% Upper Screen Art    */}
+      {/* ======================================================== */}
+      <div className="relative w-full rounded-2xl overflow-hidden bg-slate-950 border-2 border-amber-500/40 shadow-2xl">
+        <div className="w-full h-64 sm:h-80 md:h-96 relative overflow-hidden bg-slate-900 flex items-center justify-center">
+          <img
+            src={page.imageUrl}
+            alt={getPageTitle()}
+            className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-102"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = '/assets/storybook/vishwamitra-menaka.jpg';
+            }}
+          />
 
-              <blockquote className="font-serif italic text-amber-100 text-sm md:text-base leading-relaxed pr-6">
-                {dialogueQuote}
-              </blockquote>
-
-              {speaker && (
-                <div className="mt-2.5 flex items-center justify-end text-xs text-amber-400 font-royal font-semibold">
-                  <span>— {speaker}</span>
-                </div>
-              )}
+          {/* Scene Tag Badge if available */}
+          {getSceneTag() && (
+            <div className="absolute top-3 left-3 z-10 flex items-center space-x-1.5 px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-amber-400/60 text-amber-300 text-xs font-royal shadow-lg">
+              <Sparkles className="w-3 h-3 text-amber-400" />
+              <span>{getSceneTag()}</span>
             </div>
           )}
-        </div>
 
-        {/* Page Slider / Jump Dots */}
-        <div className="px-6 md:px-8 py-3 bg-black/40 border-t border-amber-500/20 flex items-center justify-between">
-          <div className="flex items-center space-x-1.5 flex-wrap">
-            {pages.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => {
-                  audioService.playClick();
-                  onPageChange(idx);
-                }}
-                className={`transition-all rounded-full ${
-                  idx === currentPageIndex
-                    ? 'w-6 h-2.5 bg-gradient-to-r from-amber-400 to-yellow-300'
-                    : 'w-2.5 h-2.5 bg-slate-700 hover:bg-slate-500'
-                }`}
-                title={`Jump to Page ${idx + 1}`}
-              />
-            ))}
-          </div>
-
-          <span className="text-[11px] text-amber-300/60 font-serif">
-            {language === 'te' ? 'స్వైప్ లేదా కీబోర్డ్ బాణాలతో పేజీ మార్చండి' : language === 'hi' ? 'स्वाइप या तीर की दबाकर पढ़ें' : 'Swipe or use arrow keys to turn page'}
-          </span>
+          {/* Bottom vignette gradient */}
+          <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
         </div>
       </div>
 
-      {/* Navigation Footer Buttons */}
-      <div className="flex items-center justify-between pt-2">
+      {/* ======================================================== */}
+      {/* 3. STORY CARD — Warm Cream/Parchment Storybook Paper     */}
+      {/* ======================================================== */}
+      <article className="relative bg-[#fdfbf6] text-slate-800 rounded-3xl border-2 border-[#e6d5a7] shadow-[0_12px_45px_rgba(0,0,0,0.5)] p-5 sm:p-8 pt-7 sm:pt-9 space-y-5">
+        
+        {/* Ornamental Golden Cartouche Header Badge */}
+        <div className="flex justify-center -mt-11 sm:-mt-13 mb-3">
+          <div className="relative px-6 sm:px-9 py-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#fae8b6] via-[#fef3c7] to-[#fae8b6] border-2 border-amber-500/80 shadow-md flex items-center justify-center text-center">
+            <span className="text-amber-800/60 text-xs sm:text-sm mr-2 select-none">✦</span>
+            <h2 className="text-base sm:text-lg md:text-xl font-bold font-serif text-[#1e293b] tracking-wide">
+              {getPageTitle()}
+            </h2>
+            <span className="text-amber-800/60 text-xs sm:text-sm ml-2 select-none">✦</span>
+          </div>
+        </div>
+
+        {/* Narrative Paragraphs */}
+        <div className="space-y-4 font-serif text-slate-800 text-sm sm:text-base leading-relaxed tracking-normal">
+          {paragraphs.map((para, idx) => (
+            <p
+              key={idx}
+              className={
+                idx === 0
+                  ? 'first-letter:text-3xl sm:first-letter:text-4xl first-letter:font-royal first-letter:font-bold first-letter:text-amber-700 first-letter:float-left first-letter:mr-2.5 first-letter:leading-none'
+                  : ''
+              }
+            >
+              {para}
+            </p>
+          ))}
+        </div>
+
+        {/* Optional Dialogue Quote Callout */}
+        {dialogueQuote && (
+          <div className="relative mt-4 p-4 rounded-xl bg-amber-50/80 border-l-4 border-amber-600 border-y border-r border-amber-200 shadow-xs">
+            <MessageSquareQuote className="w-5 h-5 text-amber-500 absolute top-3 right-3 opacity-40" />
+            <blockquote className="font-serif italic text-amber-950 text-sm sm:text-base leading-relaxed pr-6">
+              "{dialogueQuote}"
+            </blockquote>
+            {speaker && (
+              <div className="mt-2 text-right text-xs text-amber-800 font-bold font-serif">
+                — {speaker}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* ======================================================== */}
+        {/* Moral / Lesson Callout Box — Exactly matching Ref 3     */}
+        {/* ======================================================== */}
+        <div className="mt-5 rounded-2xl bg-[#fef9c3] border border-amber-300/90 p-4 sm:p-5 shadow-sm flex items-start gap-3.5">
+          <div className="w-9 h-9 rounded-full bg-amber-200/90 border border-amber-400 flex items-center justify-center flex-shrink-0 text-amber-800 shadow-inner mt-0.5">
+            <Lightbulb className="w-5 h-5 text-amber-600 fill-amber-400" />
+          </div>
+          <div className="space-y-1">
+            <h3 className="text-xs sm:text-sm font-bold font-royal text-amber-950 tracking-wide uppercase">
+              {language === 'te' ? 'నీతి / సందేశం' : language === 'hi' ? 'नैतिक सीख' : 'Moral / Lesson'}
+            </h3>
+            <p className="text-xs sm:text-sm font-sans text-amber-950/90 leading-relaxed font-normal">
+              {moralLesson}
+            </p>
+          </div>
+        </div>
+      </article>
+
+      {/* ======================================================== */}
+      {/* 4. BOTTOM BAR — Sleek Dark Nav matching Ref 3             */}
+      {/* ======================================================== */}
+      <footer className="flex items-center justify-between px-3 sm:px-4 py-2.5 bg-[#070d1d] rounded-2xl border border-amber-500/40 shadow-xl">
+        {/* Previous Button */}
         <button
           onClick={() => {
             audioService.playClick();
             onPageChange(currentPageIndex - 1);
           }}
           disabled={isFirstPage}
-          className={`px-4 py-2.5 rounded-xl border flex items-center space-x-1.5 text-xs font-royal transition-all ${
+          className={`px-4 sm:px-5 py-2 rounded-full border flex items-center space-x-2 text-xs sm:text-sm font-serif font-semibold transition-all shadow-sm ${
             isFirstPage
-              ? 'opacity-30 border-slate-800 text-slate-600 cursor-not-allowed'
-              : 'border-amber-500/40 text-amber-200 hover:bg-amber-500/20'
+              ? 'opacity-30 border-slate-700 bg-slate-900/60 text-slate-500 cursor-not-allowed'
+              : 'border-amber-400/70 bg-[#0c142c] hover:bg-amber-500/20 active:scale-95 text-amber-200'
           }`}
         >
-          <ChevronLeft className="w-4 h-4" />
-          <span>{language === 'te' ? 'మునుపటి పేజీ' : language === 'hi' ? 'पिछला पृष्ठ' : 'Previous Page'}</span>
+          <ArrowLeft className="w-4 h-4 text-amber-400" />
+          <span>{language === 'te' ? 'మునుపటిది' : language === 'hi' ? 'पिछला' : 'Previous'}</span>
         </button>
 
+        {/* Center Page Pill Badge e.g. "1 / 8" */}
+        <div className="px-4 py-1.5 rounded-full bg-[#030712] border border-amber-500/50 text-amber-300 font-bold font-royal text-xs sm:text-sm tracking-widest shadow-inner">
+          {currentPageIndex + 1} / {pages.length}
+        </div>
+
+        {/* Next / Finish Button */}
         {!isLastPage ? (
           <button
             onClick={() => {
               audioService.playClick();
               onPageChange(currentPageIndex + 1);
             }}
-            className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 hover:from-amber-500 hover:to-yellow-400 text-slate-950 font-black text-xs md:text-sm font-royal tracking-wider flex items-center space-x-2 shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all hover:scale-105"
+            className="px-4 sm:px-5 py-2 rounded-full border border-amber-400/70 bg-[#0c142c] hover:bg-amber-500/20 active:scale-95 text-amber-200 text-xs sm:text-sm font-serif font-semibold flex items-center space-x-2 transition-all shadow-sm"
           >
-            <span>{language === 'te' ? 'తరువాతి పేజీ' : language === 'hi' ? 'अगला पृष्ठ' : 'Next Page'}</span>
-            <ChevronRight className="w-4 h-4" />
+            <span>{language === 'te' ? 'తరువాతిది' : language === 'hi' ? 'अगला' : 'Next'}</span>
+            <ArrowRight className="w-4 h-4 text-amber-400" />
           </button>
         ) : (
           <button
@@ -353,14 +428,13 @@ export const IllustratedPageReader: React.FC<IllustratedPageReaderProps> = ({
               audioService.playClick();
               onFinishPages();
             }}
-            className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 hover:from-emerald-500 hover:to-teal-400 text-slate-950 font-black text-xs md:text-sm font-royal tracking-wider flex items-center space-x-2 shadow-[0_0_25px_rgba(16,185,129,0.5)] transition-all hover:scale-105 animate-pulse"
+            className="px-5 sm:px-6 py-2 rounded-full bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 hover:from-amber-400 hover:to-yellow-300 active:scale-95 text-slate-950 text-xs sm:text-sm font-royal font-bold flex items-center space-x-2 shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all"
           >
-            <Award className="w-4 h-4 fill-slate-950" />
-            <span>{language === 'te' ? 'సారాంశం చూడండి' : language === 'hi' ? 'कथा सारांश देखें' : 'View Part Summary'}</span>
-            <ChevronRight className="w-4 h-4" />
+            <span>{language === 'te' ? 'సారాంశం' : language === 'hi' ? 'सारांश' : 'Summary'}</span>
+            <ArrowRight className="w-4 h-4" />
           </button>
         )}
-      </div>
+      </footer>
     </div>
   );
 };
